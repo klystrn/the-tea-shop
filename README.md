@@ -35,21 +35,21 @@ _italic_ The Tea Shop is a mock business idea and is __NOT__ a licensed business
 - White (#FFFFFF)
 
 ### Typography (San Serif) ###
-- Larsseit (Bold, Regular)
+- Larsseit
 - Avenir Next
 
 ## Products ###
 - The House Specials
-    1. Earl Grey
-    2. Matcha
-    3. English Breakfast Tea
-    4. The Classic Tea Gift Pack (3 packs - 1 of each)
-    5. The Tea Gift Pack (12 packs - 4 of each)
+    - Earl Grey
+    - Matcha
+    - English Breakfast Tea
+    - The Classic Tea Gift Pack (3 packs - 1 of each)
+    - The Tea Gift Pack (12 packs - 4 of each)
 - Floral Fantasy
-    1. Reverie (Lavender, Earl grey)
-    2. Bloom (Rosehip, Rose Petals, Lemon Balm)
-    3. Bliss (Linden Flowers, Vanilla)
-    4. Bouquet Of Dreams (3 packs - 1 of each)
+    - Reverie (Lavender, Earl grey)
+    - Bloom (Rosehip, Rose Petals, Lemon Balm)
+    - Bliss (Linden Flowers, Vanilla)
+    - Bouquet Of Dreams (3 packs - 1 of each)
 
 ## Technologies Used ##
 1. HTML, CSS
@@ -65,3 +65,7 @@ _italic_ The Tea Shop is a mock business idea and is __NOT__ a licensed business
 ### Media ###
 1. Dylan Chong (The House Specials, Logo)
 2. Yap Yi Xuan (Floral Fantasy)
+
+### Links & Resources ###
+1. [Fonts](https://www.fontsquirrel.com)
+2. 

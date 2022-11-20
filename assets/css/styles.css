@@ -1,9 +1,37 @@
 
-/* ================ Variables ================*/
+/* ================ CSS VARIABLES ================ */
 :root{
-    /* ================ Typography - Larsseit ================*/
+    /* ================ TYPOGRAPHY ================ */
+    /* ================ Larsseit ================ */
     --larsseit-regular: 'larsseitregular';
+    --larsseit-bold: 'larsseitbold';
+    --larsseit-boldbold-italic: 'larsseit_boldbold_italic';
+    --larsseit-extrabold: 'larsseitextrabold';
+    --larsseit-extrabold-italic: 'larsseitextrabold_italic';
+    --larsseit-light: 'larsseitlight';
+    --larsseit-light-italic: 'larsseitlight_italic';
+    --larsseit-medium: 'larsseitmedium';
+    --larsseit-medium-italic: 'larsseitmedium_italic';
+    --larsseit-thin: 'larsseitthin';
+    --larsseit-thin-italic: 'larsseitthin_italic';
 
-    /* ================ Typography - AvenirNext ================*/
-    --larsseit-regular: 'larsseitregular';
+    /* ================ Avenir Next ================ */
+    --avenir-next-lt-probold: 'avenir_next_lt_probold';
+    --avenir-next-lt-proBdCn: 'avenir_next_lt_proBdCn';
+    --avenir-next-lt-prodemi: 'avenir_next_lt_prodemi';
+    --avenir-next-lt-prodemiCn: 'avenir_next_lt_prodemiCn';
+    --avenir-next-lt-proitalic: 'avenir_next_lt_proitalic';
+    --avenir-next-lt-proregular: 'avenir_next_lt_proregular';
+
+    /* ================ Webpage Fonts ================ */
+    --heading-font: 'larsseitbold';
+    --avenir-next-lt-proregular: 'avenir_next_lt_proregular';
+}
+
+h1{
+    font-family: var(--heading-font);
+}
+
+.intro{
+    font-family: var(--avenir-next-lt-proregular);
 }
