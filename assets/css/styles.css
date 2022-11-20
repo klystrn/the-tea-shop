@@ -1,7 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
-/* ================ CSS VARIABLES ================ */
+/* ====================== CSS VARIABLES ====================== */
 :root{
-    /* ================ TYPOGRAPHY ================ */
+    /* ====================== WEBPAGE VARIABLES ====================== */
+    --heading-font: 'larsseitbold';
+    --body-font: 'Poppins', sans-serif;
+
+    --heading-font-colour: #FFFFFF;
+    --body-font-colour: #FFFFFF;
+
+    --h1-font-size: 4.00rem;
+    --h2-font-size: 3.50rem;
+    --h3-font-size: 3.00rem;
+    --h4-font-size: 2.50rem;
+    --h5-font-size: 2.00rem;
+    --h6-font-size: 1.50rem;
+    --normal-font-size: 1.2rem;
+    --small-font-size: 1.00rem;
+    --smaller-font-size: 0.80rem;
+
+    --font-medium: 500;
+    --font-semi-bold: 600;
+
+    /* ====================== TYPOGRAPHY ====================== */
     /* ================ Larsseit ================ */
     --larsseit-regular: 'larsseitregular';
     --larsseit-bold: 'larsseitbold';
@@ -23,15 +44,140 @@
     --avenir-next-lt-proitalic: 'avenir_next_lt_proitalic';
     --avenir-next-lt-proregular: 'avenir_next_lt_proregular';
 
-    /* ================ Webpage Fonts ================ */
-    --heading-font: 'larsseitbold';
-    --avenir-next-lt-proregular: 'avenir_next_lt_proregular';
+    /* ====================== COLOURS ====================== */
+    --special-orange-strong: #FF9E1B;
+    --special-orange-light: #FBB03C;
+
+    --special-pink-strong: #CEA190;
+    --special-pink-light: #F4E6E1;
+    --special-purple-strong: #9290ce;
+    --special-purle-light: #d6cffb;
+    --special-green-strong: #99d8bd;
+    --special-green-light: #c5e4d7;
+
+    --special-black: #101820;
+    --special-white: #FFFFFF;
+}
+
+/* ====================== WEBPAGE ====================== */
+body{
+    background-color: var(--special-orange-strong);
+    font-family: var(--body-font);
 }
 
 h1{
     font-family: var(--heading-font);
+    font-size: var(--h1-font-size);
 }
 
-.intro{
-    font-family: var(--avenir-next-lt-proregular);
+h2{
+    font-family: var(--heading-font);
+    font-size: var(--h2-font-size);
 }
+
+h3{
+    font-family: var(--heading-font);
+    font-size: var(--h3-font-size);
+}
+
+h4{
+    font-family: var(--heading-font);
+    font-size: var(--h4-font-size);
+}
+
+h5{
+    font-family: var(--heading-font);
+    font-size: var(--h5-font-size);
+}
+
+h6{
+    font-family: var(--heading-font);
+    font-size: var(--h6-font-size);
+}
+
+/* ====================== HEADER ====================== */
+.header_grid{
+    display: grid;
+    grid-template-columns: 0.25fr 4fr;
+    background-color: var(--special-white);
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.header_grid_column1{
+    padding-left: 1rem;
+}
+
+.header_grid_column2{
+    padding-left: 1rem;
+}
+
+.header_heading{
+    color: var(--special-orange-light);
+    font-size: 4.25rem;
+}
+
+.header_logo{
+    height: 175px;
+    width: auto;
+}
+
+/* ====================== SECTION: HOME ====================== */
+
+/* ================ News & Promotions ================ */
+.home_news_poster1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* ================ About Us ================ */
+.home_aboutus{
+    margin-top: 8rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    background-color: var(--special-white);
+    border-radius: 15px;
+}
+
+.home_aboutus_header{
+    color: var(--special-orange-strong);
+    text-align: center;
+    padding-top: 1.5rem;
+}
+
+.home_aboutus_grid{
+    background-color: var(--special-white);
+    border-radius: 15px;
+}
+
+.home_aboutus_grid_columns{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+}
+
+.home_aboutus_grid_column1{
+    padding-left: 3rem;
+    padding-right: 1.5rem;
+}
+
+.home_aboutus_grid_column2{
+    padding-left: 1.5rem;
+    padding-right: 1rem;
+}
+
+.home_aboutus_text{
+    font-weight: var(--font-medium);
+    font-size: var(--normal-font-size);
+    color: var(--special-orange-strong);
+}
+
+.header_altlogo{
+    margin-top: -7.5rem;
+    height: 430px;
+    width: auto;
+}
+
+
+
+
