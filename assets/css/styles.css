@@ -4,7 +4,7 @@
 :root{
     /* ====================== WEBPAGE VARIABLES ====================== */
     --heading-font: 'larsseitbold';
-    --body-font: 'Poppins', sans-serif;
+    --body-font: 'avenir_next_lt_proregular';
 
     --heading-font-colour: #FFFFFF;
     --body-font-colour: #FFFFFF;
@@ -20,7 +20,7 @@
     --smaller-font-size: 0.80rem;
 
     --font-medium: 500;
-    --font-semi-bold: 600;
+    --font-semi-bold: 650;
 
     /* ====================== TYPOGRAPHY ====================== */
     /* ================ Larsseit ================ */
@@ -59,10 +59,17 @@
     --special-white: #FFFFFF;
 }
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* ====================== WEBPAGE ====================== */
 body{
     background-color: var(--special-orange-strong);
     font-family: var(--body-font);
+    list-style: none;
 }
 
 h1{
@@ -95,32 +102,126 @@ h6{
     font-size: var(--h6-font-size);
 }
 
-/* ====================== HEADER ====================== */
-.header_grid{
+/* ====================== NAVIGATION BAR ====================== */
+nav{
+    background-color: white;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+}
+
+/* ================ Contents ================ */
+.navigation_grid{
     display: grid;
-    grid-template-columns: 0.25fr 4fr;
-    background-color: var(--special-white);
-    margin-top: -10px;
-    margin-left: -10px;
-    margin-right: -10px;
+    grid-template-columns: 0.25fr 4fr 0.25fr;
 }
 
-.header_grid_column1{
+.navigation_grid_column1{
+    padding-left: 1rem;
+    padding-top: auto;
+    padding-bottom: auto;
+}
+
+.navigation_grid_column2{
     padding-left: 1rem;
 }
 
-.header_grid_column2{
+.navigation_grid_column3{
     padding-left: 1rem;
-}
-
-.header_heading{
-    color: var(--special-orange-light);
-    font-size: 4.25rem;
-}
-
-.header_logo{
-    height: 175px;
+    color: var(--special-orange-strong);
+    height: 75px;
     width: auto;
+}
+
+
+.navigation_heading{
+    color: var(--special-orange-strong);
+}
+
+.navigation_logo{
+    height: 75px;
+    width: auto;
+}
+
+/* ================ Hamburger ================ */
+input[type="checkbox"]{
+    display: none;
+}
+
+.wrapper{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(-135deg, #ffcf87, #FF903C);
+    clip-path: circle(25px at calc(100% - 45px) 45px);
+    transition: all 0.3s ease-in-out;
+}
+
+#active:checked ~ .wrapper{
+    clip-path: circle(75%);
+}
+  
+.hamburger{
+    position: absolute;
+    z-index: 2;
+    right: 20px;
+    top: 20px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #FFFFFF;
+    background: linear-gradient(-135deg, #ffcf87, #FF903C);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+  
+#active:checked ~ .hamburger{
+    background: #FFFFFF;
+    color: #FF903C;
+}
+  
+#active:checked ~ .hamburger i:before{
+    content: "\f00d";
+}
+  
+.wrapper ul{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    text-align: center;
+}
+  
+.wrapper ul li{
+    margin: 15px 0;
+}
+  
+.wrapper ul li a{
+    color: none;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: var(--font-medium);
+    padding: 5px 30px;
+    color: #FFFFFF;
+    position: relative;
+    line-height: 50px;
+    transition: all 0.3s ease;
+}
+  
+.wrapper ul li a:hover{
+    color: #FF903C;
+    background-color: #FFFFFF;
+    transition: 0.3s;
+}
+
+.wrapper ul li a:not(:hover){
+    transition: 0.3s;
 }
 
 /* ====================== SECTION: HOME ====================== */
@@ -130,6 +231,8 @@ h6{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    max-width: 100%;
+    height: auto;
 }
 /* ================ About Us ================ */
 .home_aboutus{
