@@ -91,10 +91,10 @@ _The Tea Shop is a mock business idea and is __NOT__ a licensed business and tea
 - smaller font size: 0.80rem (12.8px)
 
 - font medium: 500px
-- font semi bold: 600px
+- font semi bold: 650px
 
 - heading font: 'Larsseit Bold', sans-serif
-- body font: 'Poppins', sans-serif
+- body font: 'Avenir Next lt Proregular', sans-serif
 
 ## Products ###
 - The House Specials
@@ -134,6 +134,20 @@ _The Tea Shop is a mock business idea and is __NOT__ a licensed business and tea
 4. 21st November 2022
     - Initialised CSS variables
     - Begun working on home page for website
+5. 26th November 2022
+    - Improved README.md
+    - Cleared and organised assets
+    - Finished [website content write-ups](https://docs.google.com/document/d/1d6IgJQ8PTTlHzXS34N_w7H7b1kIVKdQYW_S_QW0H-C4/edit?usp=sharing)
+    - Researched on website components (navigation bar, footer, carousel page)
+6. 28th November 2022
+    - Added AboutUs.html, ContactUs.html, FloralFantasy.html, ProductCatologue.html, ShoppingCart.html, TheHouseSpecials.html
+    - Worked on navigation bar
+    - Added a hamburger navigation menu
+    - Fixed a bug regarding the importing of custom font "avenir next"
+    - Fixed margins on home page promotions section
+    - Imported unicons iconscount into index.html
+7. 29th November 2022
+    - 
 
 ## Credits ##
 ### Acknowledgements ###
@@ -148,3 +162,5 @@ _The Tea Shop is a mock business idea and is __NOT__ a licensed business and tea
 2. [Fonts](https://www.fontsquirrel.com)
 3. [What is Organic Tea?](https://frasertea.com/blogs/explore/what-is-organic-tea#:~:text=Organic%20Teas%20use%20no%20chemicals,sticky%20bug%20catchers%20pictured%20below.)
 4. [Environmentally-friendly Packaging](https://noissue.co/blog/environmentally-friendly-packaging-materials/)
+5. [CSS-Clip Path](https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path)
+6. [Fullscreen Overlay Navigation Menu Bar using only HTML & CSS](https://www.youtube.com/watch?v=wjkvYWSVpCY)
