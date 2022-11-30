@@ -446,13 +446,13 @@ footer{
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease-out;
-  }
+}
   
-  .footer_button:hover{
+.footer_button:hover{
     width: 175px;
-  }
+}
   
-  .footer_iconlink{
+.footer_iconlink{
     display: inline-block;
     height: 60px;
     width: 60px;
@@ -461,34 +461,33 @@ footer{
     box-sizing: border-box;
     line-height: 60px;
     transition: all 0.3s ease-out;
-  }
+}
   
-  .footer_icons .footer_button:nth-child(1):hover .footer_iconlink{
+.footer_icons .footer_button:nth-child(1):hover .footer_iconlink{
     background: #4267B2;
-  }
-  .footer_icons .footer_button:nth-child(2):hover .footer_iconlink{
+}
+.footer_icons .footer_button:nth-child(2):hover .footer_iconlink{
     background: #1DA1F2;
-  }
-  .footer_icons .footer_button:nth-child(3):hover .footer_iconlink{
+}
+.footer_icons .footer_button:nth-child(3):hover .footer_iconlink{
     background: linear-gradient(-135deg, #833AB4, #FCAF45);
-  }
-  .footer_icons .footer_button:nth-child(4):hover .footer_iconlink{
+}
+.footer_icons .footer_button:nth-child(4):hover .footer_iconlink{
     background: linear-gradient(-135deg, #333, rgb(88, 88, 88));
-  }
+}
   
-  .footer_icons .footer_button .footer_iconlink i{
+.footer_icons .footer_button .footer_iconlink i{
     font-size: 25px;
     line-height: 60px;
     transition: all 0.3s ease-out;
-  }
-  
-  .footer_icons .footer_button:hover .footer_iconlink i{
+}
+.footer_icons .footer_button:hover .footer_iconlink i{
     color: #fff;
-  }
-  
-  #footer_button_content{
+}
+
+.footer_icons .footer_button button{
     font-family: var(--body-font);
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     font-weight: bolder;
     line-height: 60px;
     margin-left: 10px;
@@ -496,28 +495,28 @@ footer{
     margin-bottom: auto;
     transition: all 0.3s ease-out;
     cursor: pointer;
-  }
+}
   
-  .footer_icons .footer_button:nth-child(1) button{
+.footer_icons .footer_button:nth-child(1) button{
     color: #4267B2;
     border: none;
     background: none;
-  }
-  .footer_icons .footer_button:nth-child(2) button{
+}
+.footer_icons .footer_button:nth-child(2) button{
     color: #1DA1F2;
     border: none;
     background: none;
-  }
-  .footer_icons .footer_button:nth-child(3) button{
+}
+.footer_icons .footer_button:nth-child(3) button{
     color: #E1306C;
     border: none;
     background: none;
-  }
-  .footer_icons .footer_button:nth-child(4) button{
+}
+.footer_icons .footer_button:nth-child(4) button{
     color: #333;
     border: none;
     background: none;
-  }
+}
 
 /* ================ Footer - Responsiveness ================ */
 
@@ -573,6 +572,77 @@ footer{
         width: 537.5px;
         height: auto;
     }
+
+    .footer_button:hover{
+        width: 175px;
+    }
+      
+    .footer_iconlink{
+        display: inline-block;
+        height: 60px;
+        width: 60px;
+        text-align: center;
+        border-radius: 50px;
+        box-sizing: border-box;
+        line-height: 60px;
+        transition: all 0.3s ease-out;
+    }
+      
+    .footer_icons .footer_button:nth-child(1):hover .footer_iconlink{
+        background: #4267B2;
+    }
+    .footer_icons .footer_button:nth-child(2):hover .footer_iconlink{
+        background: #1DA1F2;
+    }
+    .footer_icons .footer_button:nth-child(3):hover .footer_iconlink{
+        background: linear-gradient(-135deg, #833AB4, #FCAF45);
+    }
+    .footer_icons .footer_button:nth-child(4):hover .footer_iconlink{
+        background: linear-gradient(-135deg, #333, rgb(88, 88, 88));
+    }
+      
+    .footer_icons .footer_button .footer_iconlink i{
+        font-size: 25px;
+        line-height: 60px;
+        transition: all 0.3s ease-out;
+    }
+    .footer_icons .footer_button:hover .footer_iconlink i{
+        color: #fff;
+    }
+    
+    .footer_icons .footer_button button{
+        font-family: var(--body-font);
+        font-size: 1.15rem;
+        font-weight: bolder;
+        line-height: 60px;
+        margin-left: 10px;
+        margin-top: auto;
+        margin-bottom: auto;
+        transition: all 0.3s ease-out;
+        cursor: pointer;
+    }
+      
+    .footer_icons .footer_button:nth-child(1) button{
+        color: #4267B2;
+        border: none;
+        background: none;
+    }
+    .footer_icons .footer_button:nth-child(2) button{
+        color: #1DA1F2;
+        border: none;
+        background: none;
+    }
+    .footer_icons .footer_button:nth-child(3) button{
+        color: #E1306C;
+        border: none;
+        background: none;
+    }
+    .footer_icons .footer_button:nth-child(4) button{
+        color: #333;
+        border: none;
+        background: none;
+    }
+    
 }
 
 /* ================ Desktops ================ */
@@ -592,6 +662,72 @@ footer{
         max-width: 1440px;
         height: auto;
     }
+    
+    .footer_button:hover{
+        width: 175px;
+    }
+    .footer_iconlink{
+        display: inline-block;
+        height: 60px;
+        width: 60px;
+        text-align: center;
+        border-radius: 50px;
+        box-sizing: border-box;
+        line-height: 60px;
+        transition: all 0.3s ease-out;
+    }
+    .footer_icons .footer_button:nth-child(1):hover .footer_iconlink{
+        background: #4267B2;
+    }
+    .footer_icons .footer_button:nth-child(2):hover .footer_iconlink{
+        background: #1DA1F2;
+    }
+    .footer_icons .footer_button:nth-child(3):hover .footer_iconlink{
+        background: linear-gradient(-135deg, #833AB4, #FCAF45);
+    }
+    .footer_icons .footer_button:nth-child(4):hover .footer_iconlink{
+        background: linear-gradient(-135deg, #333, rgb(88, 88, 88));
+    }
+    .footer_icons .footer_button .footer_iconlink i{
+        font-size: 25px;
+        line-height: 60px;
+        transition: all 0.3s ease-out;
+    }
+    .footer_icons .footer_button:hover .footer_iconlink i{
+        color: #fff;
+    }
+    .footer_icons .footer_button button{
+        font-family: var(--body-font);
+        font-size: 1.15rem;
+        font-weight: bolder;
+        line-height: 60px;
+        margin-left: 10px;
+        margin-top: auto;
+        margin-bottom: auto;
+        transition: all 0.3s ease-out;
+        cursor: pointer;
+    }
+    .footer_icons .footer_button:nth-child(1) button{
+        color: #4267B2;
+        border: none;
+        background: none;
+    }
+    .footer_icons .footer_button:nth-child(2) button{
+        color: #1DA1F2;
+        border: none;
+        background: none;
+    }
+    .footer_icons .footer_button:nth-child(3) button{
+        color: #E1306C;
+        border: none;
+        background: none;
+    }
+    .footer_icons .footer_button:nth-child(4) button{
+        color: #333;
+        border: none;
+        background: none;
+    }
+    
 }
 
 /* ================ Small Screens & Laptops ================ */
