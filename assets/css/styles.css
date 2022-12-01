@@ -25,19 +25,6 @@
     --font-header-bold: 800;
 
     /* ====================== TYPOGRAPHY ====================== */
-    /* ================ Larsseit ================ */
-    --larsseit-regular: 'larsseitregular';
-    --larsseit-bold: 'larsseitbold';
-    --larsseit-boldbold-italic: 'larsseit_boldbold_italic';
-    --larsseit-extrabold: 'larsseitextrabold';
-    --larsseit-extrabold-italic: 'larsseitextrabold_italic';
-    --larsseit-medium: 'larsseitmedium';
-    --larsseit-medium-italic: 'larsseitmedium_italic';
-    --larsseit-light: 'larsseitlight';
-    --larsseit-light-italic: 'larsseitlight_italic';
-    --larsseit-thin: 'larsseitthin';
-    --larsseit-thin-italic: 'larsseitthin_italic';
-
     /* ================ Avenir Next ================ */
     --avenir-next-lt-probold: 'avenir_next_lt_probold';
     --avenir-next-lt-proBdCn: 'avenir_next_lt_proBdCn';
@@ -59,7 +46,9 @@
     --special-green-light: #C5E4D7;
 
     --special-black: #101820;
-    --special-grey:  #3d3d3d;
+    --special-grey-strong:  #3d3d3d;
+    --special-grey-light:  #a0a0a0;
+    --special-grey-medium:  #777777;
     --special-white: #FFFFFF;
 }
 
@@ -250,20 +239,18 @@ input[type="checkbox"]{
 }
 /* ================ About Us ================ */
 .home_aboutus{
-    margin-top: 8rem;
-    padding-bottom: 1rem;
     background-color: var(--special-white);
 }
 
 .home_aboutus_header{
     color: var(--special-orange-strong);
     text-align: center;
-    padding-top: 1.5rem;
+    padding-top: 2.5rem;
 }
 
 .home_aboutus_grid_columns{
     display: grid;
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 1fr 1fr;
 }
 
 .home_aboutus_grid_column1{
@@ -277,6 +264,14 @@ input[type="checkbox"]{
 .home_aboutus_text{
     font-weight: var(--font-medium);
     color: var(--special-orange-strong);
+    margin-bottom: 1rem;
+}
+
+.home_aboutus_mobiletext{
+    display: none;
+    font-weight: var(--font-medium);
+    color: var(--special-orange-strong);
+    margin: 0 0.5rem 1rem 0.5rem;
 }
 
 .home_altlogo{
@@ -300,7 +295,7 @@ footer{
     width: 100%;
     text-align: left;
     font-weight: bold;
-    background-color: var(--special-grey);
+    background-color: var(--special-grey-strong);
 }
 
 .footer_column1, .footer_column2, .footer_column3{
@@ -357,16 +352,12 @@ footer{
 }
 
 .footer_column2 i{
-    background-color: #1c1c1c;
-    color: #ffffff;
-    font-size: 1.5rem;
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 3rem;
     margin: 1.5rem 1.5rem;
     vertical-align: middle;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 3rem;
+    color: #ffffff;
 }
 
 .footer_column2_icon{
@@ -386,6 +377,7 @@ footer{
     font-size: 14px;
     line-height: 2;
 }
+
 
 .footer_column2_email{
     color: #FFFFFF;
@@ -522,7 +514,7 @@ footer{
     .footer_column2 i{
         margin-left: 0;
     }
-}       
+}
 
 /* ====================== RESPONSIVENESS ====================== */
 
@@ -678,11 +670,6 @@ footer{
 		margin-top: 19px
 	}
 	
-	.home_aboutus_grid_mobile {
-	    display: unset;
-		margin-left: auto;
-		margin-right: auto;
-	}
 	.home_aboutus_grid_column2 {
 		display: none;
 	}
@@ -691,12 +678,29 @@ footer{
         grid-template-columns: 1fr;
 	}
     .home_altlogo{
-        margin-top: 0.75rem;
-        margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.25rem;
         width: 322.5px;
         height: auto;
     }
-	
+    .home_aboutus_text{
+        text-align: center;
+    }
+    .home_aboutus_grid_mobile{
+	    display: unset;
+		margin-left: auto;
+		margin-right: auto;
+	}
+    .home_aboutus_mobiletext{
+        display: unset;
+        margin: 0 2.25rem 1rem 2.25rem;
+    }
+    .home_aboutus_grid_column1{
+        display: none;
+    }
+    .home_aboutus_grid_column2{
+        display: none;
+    }
 
     
 }
@@ -709,21 +713,34 @@ footer{
 
 	.navigation_heading {
 		margin-top: 8px;
-        font-size: 2rem;
+        font-size: 1.65rem;
 	}
     .navigation_btn_shoppingcart_icon{
         padding-left: 1rem;
     }
 
+    
     .home_altlogo{
-        margin-top: 0.5rem;
-        margin-bottom: 0.3rem;
+        margin-top: 0.25rem;
+        margin-bottom: 0.15rem;
         width: 215px;
         height: auto;
     }
     .home_aboutus_text{
-        margin-left: auto;
-        margin-right: auto;
+        text-align: center;
         padding: 0;
     }
+    .home_aboutus_mobiletext{
+        display: unset;
+        margin: 0 1rem 1rem 1rem;
+        text-align: center;
+    }
+    .home_aboutus_grid_column1{
+        display: none;
+    }
+    .home_aboutus_grid_column2{
+        display: none;
+    }
+    
+    
 }
