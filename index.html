@@ -19,40 +19,42 @@
 
     <body>
         <!-- ========================== NAVIGATION BAR ========================== -->
-        <nav>
-            <div class="navigation_grid">
-                <div class="navigation_gridleft">
-                    <div class="navigation_gridleft_column1">
-                        <img class="navigation_logo" src="assets\media\TheTeaShop - logo - empty background.png" alt="TheTeaShop Logo">
-                    </div>
-
-                    <div class="navigation_gridleft_column2">
-                        <h1 class="navigation_heading">the tea shop</h1>
+        <header>
+            <nav>
+                <div class="navigation_grid">
+                    <div class="navigation_gridleft">
+                        <div class="navigation_gridleft_column1">
+                            <img class="navigation_logo" src="assets\media\TheTeaShop - logo - empty background.png" alt="TheTeaShop Logo">
+                        </div>
+    
+                        <div class="navigation_gridleft_column2">
+                            <h1 class="navigation_heading">the tea shop</h1>
+                        </div>
+                        
+                        <div class="navigation_gridleft_column3">
+                            <a href="ShoppingCart.html" class="navigation_btn_shoppingcart_icon">
+                                <i class="il uil-shopping-bag"></i>
+                            </a>
+                        </div>
                     </div>
                     
-                    <div class="navigation_gridleft_column3">
-                        <a href="ShoppingCart.html" class="navigation_btn_shoppingcart_icon">
-                            <i class="il uil-shopping-bag"></i>
-                        </a>
+                    <div class="navigation_hamburger_menu">
+                        <input type="checkbox" id="active">
+                        <label for="active" class="hamburger">
+                            <i class="fas fa-bars"></i>
+                        </label>
+                        <div class="navigation_menu">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="AboutUs.html">About Us</a></li>
+                                <li><a href="ProductCatalogue.html">Product Catalogue</a></li>
+                                <li><a href="ContactUs.html">Contact Us</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                
-                <div class="navigation_hamburger_menu">
-                    <input type="checkbox" id="active">
-                    <label for="active" class="hamburger">
-                        <i class="fas fa-bars"></i>
-                    </label>
-                    <div class="navigation_menu">
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="AboutUs.html">About Us</a></li>
-                            <li><a href="ProductCatalogue.html">Product Catalogue</a></li>
-                            <li><a href="ContactUs.html">Contact Us</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </nav>
+            </nav>
+        </header>
 
         <!-- ========================== HOME ========================== -->
 
@@ -68,6 +70,18 @@
 				<div class="home_aboutus_grid_mobile">
                     <img class="home_altlogo" src="assets\media\TheTeaShop - alt logo - empty background.png" alt="TheTeaShop Logo">
                 </div> 
+                <div class="home_aboutus_mobiletext">
+                    <p class="home_aboutus_text">
+                        Founded by Reginald Tan in 2021, The Tea Shop is passionately dedicated to tea appreciation and 
+                        sharing our knowledge about tea culture.
+                        <br><br>
+                        We aim to share the health benefits of tea drinking withour customers  and aspire for our 
+                        customers to appreciate our specially curated tea blends.
+                        <br><br>
+                        Our 2 product lines allow YOU to choose between a strong, aromatic kick or 
+                        a delightful, blossoming infusion.
+                    </p>
+                </div>
                 <div class="home_aboutus_grid_column1">
                     <p class="home_aboutus_text">
                         Founded by Reginald Tan in 2021, The Tea Shop is passionately dedicated to tea appreciation and 
