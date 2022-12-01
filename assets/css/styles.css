@@ -365,11 +365,11 @@ footer{
 }
 
 .footer_column2 i{
-    background-color: var(--special-orange-dark);
+    background-color: #1c1c1c;
     color: #ffffff;
     font-size: 1.5rem;
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
     text-align: center;
     line-height: 3rem;
