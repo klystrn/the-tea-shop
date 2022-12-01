@@ -1,4 +1,4 @@
-// ==================== Footer Icon Buttons ====================
+// ==================== FOOTER ICON BUTTONS ====================
 function footerButtons(){
     function footerButtonFacebook(){ window.open("https://www.facebook.com/", '_blank'); }
     function footerButtonTwitter(){ window.open("https://www.twitter.com/", '_blank') }
@@ -11,5 +11,5 @@ function footerButtons(){
     document.querySelector(".footer_button_github").onclick = function () { footerButtonGithub() };
 }
 
-// ==================== CALLING FUNCTIONS ====================
 footerButtons()
+

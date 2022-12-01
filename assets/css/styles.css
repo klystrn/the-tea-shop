@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 /* ====================== CSS VARIABLES ====================== */
 :root{
     /* ====================== WEBPAGE VARIABLES ====================== */
-    --heading-font: 'larsseitbold';
+    --heading-font: font-family: 'Poppins', sans-serif;;
     --body-font: 'avenir_next_lt_proregular';
 
     --heading-font-colour: #FFFFFF;
@@ -12,14 +13,16 @@
     --h2-font-size: 3.50rem;
     --h3-font-size: 3.00rem;
     --h4-font-size: 2.50rem;
-    --h5-font-size: 2.00rem;
-    --h6-font-size: 1.50rem;
-    --normal-font-size: 1.20rem;
-    --small-font-size: 1.00rem;
-    --smaller-font-size: 0.80rem;
+
+    --largescreens-font-size: 1.65rem;
+    --desktops-font-size: 1.25rem;
+    --laptop-font-size: 1.20rem;
+    --tablets-font-size: 1.15rem;
+    --mobile-font-size: 1.10rem;
 
     --font-medium: 500;
     --font-semi-bold: 650;
+    --font-header-bold: 800;
 
     /* ====================== TYPOGRAPHY ====================== */
     /* ================ Larsseit ================ */
@@ -65,6 +68,7 @@ body{
     background-color: var(--special-orange-strong);
     font-family: var(--body-font);
     list-style: none;
+    width: 100vw;
 }
 
 *{
@@ -76,6 +80,7 @@ body{
 h1{
     font-family: var(--heading-font);
     font-size: var(--h1-font-size);
+    font-weight: var(--font-header-bold);
 }
 
 h2{
@@ -91,16 +96,6 @@ h3{
 h4{
     font-family: var(--heading-font);
     font-size: var(--h4-font-size);
-}
-
-h5{
-    font-family: var(--heading-font);
-    font-size: var(--h5-font-size);
-}
-
-h6{
-    font-family: var(--heading-font);
-    font-size: var(--h6-font-size);
 }
 
 /* ====================== NAVIGATION BAR ====================== */
@@ -272,18 +267,15 @@ input[type="checkbox"]{
 }
 
 .home_aboutus_grid_column1{
-    padding-left: 3rem;
-    padding-right: 1.5rem;
+    padding: 1.5rem 1.5rem 0 3rem;
 }
 
 .home_aboutus_grid_column2{
     padding-left: 1.5rem;
-    padding-right: 1rem;
 }
 
 .home_aboutus_text{
     font-weight: var(--font-medium);
-    font-size: var(--normal-font-size);
     color: var(--special-orange-strong);
 }
 
@@ -391,7 +383,6 @@ footer{
 
 .footer_column2 p span{
     display: block;
-    font-weight: normal;
     font-size: 14px;
     line-height: 2;
 }
@@ -419,7 +410,6 @@ footer{
     line-height: 20px;
     color: #92999f;
     font-size: 13px;
-    font-weight: normal;
     margin: 0;
 }
 
@@ -448,10 +438,6 @@ footer{
     transition: all 0.3s ease-out;
 }
   
-.footer_button:hover{
-    width: 175px;
-}
-  
 .footer_iconlink{
     display: inline-block;
     height: 60px;
@@ -460,32 +446,17 @@ footer{
     border-radius: 50px;
     box-sizing: border-box;
     line-height: 60px;
+    color: black;
     transition: all 0.3s ease-out;
 }
-  
-.footer_icons .footer_button:nth-child(1):hover .footer_iconlink{
-    background: #4267B2;
-}
-.footer_icons .footer_button:nth-child(2):hover .footer_iconlink{
-    background: #1DA1F2;
-}
-.footer_icons .footer_button:nth-child(3):hover .footer_iconlink{
-    background: linear-gradient(-135deg, #833AB4, #FCAF45);
-}
-.footer_icons .footer_button:nth-child(4):hover .footer_iconlink{
-    background: linear-gradient(-135deg, #333, rgb(88, 88, 88));
-}
-  
-.footer_icons .footer_button .footer_iconlink i{
+
+.footer_iconlink i{
     font-size: 25px;
     line-height: 60px;
     transition: all 0.3s ease-out;
 }
-.footer_icons .footer_button:hover .footer_iconlink i{
-    color: #fff;
-}
 
-.footer_icons .footer_button button{
+.footer_button button{
     font-family: var(--body-font);
     font-size: 1.15rem;
     font-weight: bolder;
@@ -497,26 +468,38 @@ footer{
     cursor: pointer;
 }
   
-.footer_icons .footer_button:nth-child(1) button{
+.footer_button:nth-child(1) button{
     color: #4267B2;
     border: none;
     background: none;
 }
-.footer_icons .footer_button:nth-child(2) button{
+.footer_button:nth-child(2) button{
     color: #1DA1F2;
     border: none;
     background: none;
 }
-.footer_icons .footer_button:nth-child(3) button{
+.footer_button:nth-child(3) button{
     color: #E1306C;
     border: none;
     background: none;
 }
-.footer_icons .footer_button:nth-child(4) button{
+.footer_button:nth-child(4) button{
     color: #333;
     border: none;
     background: none;
 }
+
+.altfooter_parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.altfooter_icons{
+    display: none;
+    padding-top: 1.5rem;
+}
+
+
 
 /* ================ Footer - Responsiveness ================ */
 
@@ -536,7 +519,7 @@ footer{
         margin-bottom: 10px;
         text-align: center;
     }
-    .footer .footer_column2 i{
+    .footer_column2 i{
         margin-left: 0;
     }
 }       
@@ -545,6 +528,10 @@ footer{
 
 /* ================ Large Screens ================ */
 @media screen and (max-width: 2560px) {
+    body{
+        font-size: var(--largescreens-font-size);
+    }
+
     .navigation_gridleft_column3 {
 		margin-top: 19px;
         margin-left: 8rem;
@@ -572,22 +559,32 @@ footer{
         width: 537.5px;
         height: auto;
     }
+    .home_aboutus_grid_column1{
+        padding: 3rem 0 0 10rem;
+    }
 
+
+
+    .footer_column2 p{
+        display: inline-block;
+        color: #FFFFFF;
+        vertical-align: middle;
+        margin: 0;
+        font-size: 1rem
+    }
+    .footer_link_content{
+        display: inline-block;
+        line-height: 1.8;
+        text-decoration: none;
+        color: #FFFFFF;
+        font-size: 1rem
+    }
     .footer_button:hover{
         width: 175px;
     }
-      
-    .footer_iconlink{
-        display: inline-block;
-        height: 60px;
-        width: 60px;
-        text-align: center;
-        border-radius: 50px;
-        box-sizing: border-box;
-        line-height: 60px;
-        transition: all 0.3s ease-out;
+    .footer_icons .footer_button:hover .footer_iconlink i{
+        color: #fff;
     }
-      
     .footer_icons .footer_button:nth-child(1):hover .footer_iconlink{
         background: #4267B2;
     }
@@ -600,53 +597,15 @@ footer{
     .footer_icons .footer_button:nth-child(4):hover .footer_iconlink{
         background: linear-gradient(-135deg, #333, rgb(88, 88, 88));
     }
-      
-    .footer_icons .footer_button .footer_iconlink i{
-        font-size: 25px;
-        line-height: 60px;
-        transition: all 0.3s ease-out;
-    }
-    .footer_icons .footer_button:hover .footer_iconlink i{
-        color: #fff;
-    }
-    
-    .footer_icons .footer_button button{
-        font-family: var(--body-font);
-        font-size: 1.15rem;
-        font-weight: bolder;
-        line-height: 60px;
-        margin-left: 10px;
-        margin-top: auto;
-        margin-bottom: auto;
-        transition: all 0.3s ease-out;
-        cursor: pointer;
-    }
-      
-    .footer_icons .footer_button:nth-child(1) button{
-        color: #4267B2;
-        border: none;
-        background: none;
-    }
-    .footer_icons .footer_button:nth-child(2) button{
-        color: #1DA1F2;
-        border: none;
-        background: none;
-    }
-    .footer_icons .footer_button:nth-child(3) button{
-        color: #E1306C;
-        border: none;
-        background: none;
-    }
-    .footer_icons .footer_button:nth-child(4) button{
-        color: #333;
-        border: none;
-        background: none;
-    }
     
 }
 
 /* ================ Desktops ================ */
 @media screen and (max-width: 1440px) {
+    body{
+        font-size: var(--desktops-font-size);
+    }
+
     .navigation_gridleft_column3 {
 		margin-top: 19px;
         margin-left: 2.25rem;
@@ -662,83 +621,51 @@ footer{
         max-width: 1440px;
         height: auto;
     }
-    
-    .footer_button:hover{
-        width: 175px;
+    .home_aboutus_grid_column1{
+        padding: 3rem 0 0 4rem;
     }
-    .footer_iconlink{
-        display: inline-block;
-        height: 60px;
-        width: 60px;
-        text-align: center;
-        border-radius: 50px;
-        box-sizing: border-box;
-        line-height: 60px;
-        transition: all 0.3s ease-out;
-    }
-    .footer_icons .footer_button:nth-child(1):hover .footer_iconlink{
-        background: #4267B2;
-    }
-    .footer_icons .footer_button:nth-child(2):hover .footer_iconlink{
-        background: #1DA1F2;
-    }
-    .footer_icons .footer_button:nth-child(3):hover .footer_iconlink{
-        background: linear-gradient(-135deg, #833AB4, #FCAF45);
-    }
-    .footer_icons .footer_button:nth-child(4):hover .footer_iconlink{
-        background: linear-gradient(-135deg, #333, rgb(88, 88, 88));
-    }
-    .footer_icons .footer_button .footer_iconlink i{
-        font-size: 25px;
-        line-height: 60px;
-        transition: all 0.3s ease-out;
-    }
-    .footer_icons .footer_button:hover .footer_iconlink i{
-        color: #fff;
-    }
-    .footer_icons .footer_button button{
-        font-family: var(--body-font);
-        font-size: 1.15rem;
-        font-weight: bolder;
-        line-height: 60px;
-        margin-left: 10px;
-        margin-top: auto;
-        margin-bottom: auto;
-        transition: all 0.3s ease-out;
-        cursor: pointer;
-    }
-    .footer_icons .footer_button:nth-child(1) button{
-        color: #4267B2;
-        border: none;
-        background: none;
-    }
-    .footer_icons .footer_button:nth-child(2) button{
-        color: #1DA1F2;
-        border: none;
-        background: none;
-    }
-    .footer_icons .footer_button:nth-child(3) button{
-        color: #E1306C;
-        border: none;
-        background: none;
-    }
-    .footer_icons .footer_button:nth-child(4) button{
-        color: #333;
-        border: none;
-        background: none;
-    }
-    
+
 }
 
-/* ================ Small Screens & Laptops ================ */
+/* ================ Laptops ================ */
 @media screen and (max-width: 1024px) {
+    body{
+        font-size: var(--laptops-font-size);
+    }
+
     .navigation_gridleft_column3 {
 		margin: 19px -30px;
-	}
+    }
+
+    .footer_icons{
+        display: none;
+    }
+    .altfooter_icons{
+        display: inline-block;
+    }
+    .altfooter_icons .footer_button:hover .footer_iconlink i{
+        color: #fff;
+    }
+    .altfooter_icons .footer_button:nth-child(1):hover .footer_iconlink{
+        background: #4267B2;
+    }
+    .altfooter_icons .footer_button:nth-child(2):hover .footer_iconlink{
+        background: #1DA1F2;
+    }
+    .altfooter_icons .footer_button:nth-child(3):hover .footer_iconlink{
+        background: linear-gradient(-135deg, #833AB4, #FCAF45);
+    }
+    .altfooter_icons .footer_button:nth-child(4):hover .footer_iconlink{
+        background: linear-gradient(-135deg, #333, rgb(88, 88, 88));
+    }
 }
 
 /* ================ Tablets ================ */
 @media screen and (max-width: 768px) {
+    body{
+        font-size: var(--tablets-font-size);
+    }
+
 	.navigation_heading {
 		font-size: 45px;
 	}
@@ -770,10 +697,16 @@ footer{
         height: auto;
     }
 	
+
+    
 }
 
 /* ================ Mobile Devices ================ */
 @media screen and (max-width: 480px) {
+    body{
+        font-size: var(--mobile-font-size);
+    }
+
 	.navigation_heading {
 		margin-top: 8px;
         font-size: 2rem;
@@ -781,14 +714,16 @@ footer{
     .navigation_btn_shoppingcart_icon{
         padding-left: 1rem;
     }
-	
-	.home_altlogo {
-		margin-top: -5rem;
-	}
+
     .home_altlogo{
         margin-top: 0.5rem;
         margin-bottom: 0.3rem;
         width: 215px;
         height: auto;
+    }
+    .home_aboutus_text{
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
     }
 }
