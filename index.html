@@ -15,6 +15,7 @@
         <link rel="stylesheet" href="assets\fonts\Avenir Next\avenir-next.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     </head>
 
     <body>
@@ -30,14 +31,11 @@
                         </div>
     
                         <div class="navigation_gridleft_column2">
-                            <h1 class="navigation_heading">the tea shop</h1>
+                            <h1 class="navigation_heading">The Tea Shop</h1>
                         </div>
-                        
-                        <div class="navigation_gridleft_column3">
-                            <a href="ShoppingCart.html" class="navigation_shoppingcart">
-                                <i class="il uil-shopping-bag"></i>
-                            </a>
-                        </div>
+                        <a href="ShoppingCart.html" class="navigation_shoppingcart">
+                            <i class="il uil-shopping-bag"></i>
+                        </a>
                     </div>
                     
                     <!-- ================= Hamburger Menu ================= -->
@@ -59,13 +57,52 @@
             </nav>
         </header>
 
-        <!-- ========================== HOME ========================== -->
+        <!-- ========================== PAGE: HOME ========================== -->
 
-        <!-- ================= News & Promotions ================= -->
-        <div>
-            <img class="home_news_poster1" src="assets\media\TheTeaShop - poster 1.png" alt="TheTeaShop Logo">
+        <!-- ================= Welcome ================= -->
+
+        <div class="home_welcome">
+            <div class="home_image_grid_poster">
+                <div class="home_image_postercontainer">
+                    <img class="home_news_poster" src="assets\media\TheTeaShop - poster 1.png" alt="TheTeaShop Logo">
+                </div>
+            </div>
+            <div class="home_image_grid">
+                <div class="home_image_container">
+                    <img src="assets\media\product-renders\TheHouseSpecials - EarlGrey.jpg" alt="" />
+                </div>
+                <div class="home_image_container">
+                    <img src="assets\media\product-renders\TheHouseSpecials - EnglishBreakfastTea.jpg" alt="" />
+                </div>
+                <div class="home_image_container">
+                    <img src="assets\media\product-renders\TheHouseSpecials - Matcha.jpg" alt="" />
+                </div>
+            </div>
         </div>
 
+        <!-- ================= Discover ================= -->
+        <div class="home_discover">
+            <h2 class="home_discover_header">Discover</h2>
+            <div class="home_discover_images">
+                <div class="home_discover_grid">
+                    <div class="home_discover_grid_hs">
+                        <a href="ProductCatalogue.html">
+                            <img class="hs_image" src="assets\media\product-renders\TheHouseSpecials - Matcha.jpg" alt="The House Specials Image">
+                        </a>
+                    </div>
+                    <div class="home_discover_grid_ff">
+                        <a href="ProductCatalogue.html">
+                            <img class="ff_image" src="assets\media\product-renders\FloralFantasy - BouquetOfDreams.png" alt="The House Specials Image">
+                        </a>
+                    </div>
+                    <div class="home_discover_grid_gp">
+                        <a href="ProductCatalogue.html">
+                            <img class="gp_image" src="assets\media\product-renders\TheHouseSpecials - TeaGiftPack.jpg" alt="The House Specials Image">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- ================= About Us ================= -->
         <div class="home_aboutus">
             <h2 class="home_aboutus_header">About Us</h2>
@@ -103,29 +140,6 @@
             </div>
         </div>
 
-        <!-- ================= Discover ================= -->
-        <div class="home_discover">
-            <h2 class="home_discover_header">Discover</h2>
-            <div class="home_discover_images">
-                <div class="home_discover_grid">
-                    <div class="home_discover_grid_hs">
-                        <a href="ProductCatalogue.html">
-                            <img class="hs_image" src="assets\media\product-renders\TheHouseSpecials - EnglishBreakfastTea.jpg" alt="The House Specials Image">
-                        </a>
-                    </div>
-                    <div class="home_discover_grid_ff">
-                        <a href="ProductCatalogue.html">
-                            <img class="ff_image" src="assets\media\product-renders\FloralFantasy - BouquetOfDreams.png" alt="The House Specials Image">
-                        </a>
-                    </div>
-                    <div class="home_discover_grid_gp">
-                        <a href="ProductCatalogue.html">
-                            <img class="gp_image" src="assets\media\product-renders\TheHouseSpecials - TeaGiftPack.jpg" alt="The House Specials Image">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <!-- ========================== FOOTER ========================== -->
         <footer class="footer">
@@ -201,17 +215,9 @@
                             Instagram
                         </button>
                     </div>
-           
-                    <div class="footer_button">
-                        <a class="footer_iconlink" href="https://github.com/klystrn/the-tea-shop">
-                            <i class="uil uil-github-alt"></i>
-                        </a>
-                        <button class="footer_button_github">
-                            Github
-                        </button>
-                    </div>
                  </div>
             </div>
+
             <div class="altfooter_parent">
                 <div class="altfooter_icons">
                     <div class="footer_button">
@@ -240,18 +246,9 @@
                             Instagram
                         </button>
                     </div>
-           
-                    <div class="footer_button">
-                        <a class="footer_iconlink" href="https://github.com/klystrn/the-tea-shop">
-                            <i class="uil uil-github-alt"></i>
-                        </a>
-                        <button class="footer_button_github">
-                            Github
-                        </button>
-                    </div>
                  </div>
             </div>
-            <p class="footer_copyright"><strong>Reginald Tan</strong> Copyright © 2022 All rights reserved</p>
+            <p class="footer_copyright">Copyright © <strong>Reginald Tan</strong> 2022 - All rights reserved</p>
         </footer>
 
         <!-- ========================== EXTERNAL FILES ========================== -->

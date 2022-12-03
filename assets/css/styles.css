@@ -3,7 +3,7 @@
 /* ====================== CSS VARIABLES ====================== */
 :root{
     /* ====================== WEBPAGE VARIABLES ====================== */
-    --heading-font: font-family: 'Poppins', sans-serif;;
+    --heading-font: font-family: 'Poppins', sans-serif;
     --body-font: 'avenir_next_lt_proregular';
 
     --heading-font-colour: #FFFFFF;
@@ -96,6 +96,7 @@ h4{
 /* ====================== NAVIGATION BAR ====================== */
 nav{
     background-color: white;
+    top: 0;
     width: 100%;
     height: 100px;
     position: fixed;
@@ -108,7 +109,7 @@ nav{
 
 .navigation_gridleft{
     display: grid;
-    grid-template-columns: 0.15fr 2.25fr 0.4fr;
+    grid-template-columns: 0.15fr 2.25fr;
 }
 
 .navigation_gridleft_column1{
@@ -134,6 +135,9 @@ nav{
 }
 
 .navigation_shoppingcart{
+    position: fixed;
+    top: 20px;
+    right: 100px;
     color: var(--special-orange-strong);
     font-size: 40px;
     font-weight: 100;
@@ -166,11 +170,11 @@ input[type="checkbox"]{
 }
 
 #active:checked ~ .navigation_menu{
-    clip-path: circle(75%);
+    clip-path: circle(100%);
 }
   
 .hamburger{
-    position: absolute;
+    position: fixed;
     z-index: 2;
     right: 20px;
     top: 20px;
@@ -234,67 +238,58 @@ input[type="checkbox"]{
 
 /* ====================== PAGE: HOME ====================== */
 
-/* ================ News & Promotions ================ */
-.home_news_poster1{
-    display: block;
-    padding-top: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    max-width: 1024px;
+
+/* ================ Welcome ================ */
+.home_welcome{
+    background-color: var(--special-grey-light);
+}
+
+.home_image_grid_poster{
+    padding-top: 120px;
+    width: 75%;
+    margin: 0 auto 1rem auto;
+}
+.home_image_postercontainer{
     height: auto;
+    overflow: hidden;
+    border-radius: 10px;
 }
-/* ================ About Us ================ */
-.home_aboutus{
-    background-color: var(--special-white);
+.home_image_postercontainer img {
+	display: block;
+	width: 100%;
+    border-radius: 10px;
+	transition: transform 0.3s;
+}
+.home_image_postercontainer:hover img{
+	transform: translateY(-1rem);
 }
 
-.home_aboutus_header{
-    color: var(--special-orange-strong);
-    text-align: center;
-    padding-top: 2.5rem;
-}
-
-.home_aboutus_grid_columns{
+.home_image_grid{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    width: 75%;
+    margin: 0 auto;
 }
-
-.home_aboutus_grid_column1{
-    padding: 1.5rem 1.5rem 0 3rem;
-}
-
-.home_aboutus_grid_column2{
-    padding-left: 1.5rem;
-}
-
-.home_aboutus_text{
-    font-weight: var(--font-medium);
-    color: var(--special-orange-strong);
-    margin-bottom: 1rem;
-}
-
-.home_aboutus_mobiletext{
-    display: none;
-    font-weight: var(--font-medium);
-    color: var(--special-orange-strong);
-    margin: 0 0.5rem 1rem 0.5rem;
-}
-
-.home_altlogo{
-    margin-top: -7.5rem;
-    width: 430px;
+.home_image_container{
     height: auto;
+    overflow: hidden;
+    border-radius: 10px;
 }
-
-.home_aboutus_grid_mobile {
-	display: none;
+.home_image_container img {
+	display: block;
+	width: 100%;
+    border-radius: 10px;
+	transition: transform 0.3s;
+}
+.home_image_container:hover img{
+	transform: scale(1.1);
 }
 
 /* ================ Discover ================ */
 .home_discover{
     background-color: var(--special-white);
-    padding: 0 4rem 2rem 4rem;
+    padding: 2rem 4rem;
     width: 100%;
 }
 
@@ -349,6 +344,56 @@ input[type="checkbox"]{
 .home_discover_grid_gp .gp_image:not(:hover){
     transition: 0.3s;
 }
+
+/* ================ About Us ================ */
+.home_aboutus{
+    background-color: var(--special-white);
+}
+
+.home_aboutus_header{
+    color: var(--special-orange-strong);
+    text-align: center;
+    padding-top: 2.5rem;
+}
+
+.home_aboutus_grid_columns{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.home_aboutus_grid_column1{
+    padding: 1.5rem 1.5rem 0 3rem;
+}
+
+.home_aboutus_grid_column2{
+    padding-left: 1.5rem;
+}
+
+.home_aboutus_text{
+    font-weight: var(--font-medium);
+    color: var(--special-orange-strong);
+    margin-bottom: 1rem;
+    margin-left: 4rem;
+}
+
+.home_aboutus_mobiletext{
+    display: none;
+    font-weight: var(--font-medium);
+    color: var(--special-orange-strong);
+    margin: 0 0.5rem 1rem 0.5rem;
+}
+
+.home_altlogo{
+    margin-top: -7.5rem;
+    width: 430px;
+    height: auto;
+}
+
+.home_aboutus_grid_mobile {
+	display: none;
+}
+
+
 
 /* ====================== PAGE: PRODUCT CATALOGUE ====================== */
 
@@ -599,7 +644,7 @@ footer{
     width: 60px;
     margin: 0 5px;
     overflow: hidden;
-    background: #fff;
+    background: #FFFFFF;
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease-out;
