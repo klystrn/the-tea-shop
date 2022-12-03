@@ -11,10 +11,10 @@
 
     --h1-font-size: 4.00rem;
     --h2-font-size: 3.50rem;
-    --h3-font-size: 3.00rem;
-    --h4-font-size: 2.50rem;
+    --h3-font-size: 2.60rem;
+    --h4-font-size: 2.25rem;
 
-    --largescreens-font-size: 1.65rem;
+    --largescreens-font-size: 1.40rem;
     --desktops-font-size: 1.25rem;
     --laptop-font-size: 1.20rem;
     --tablets-font-size: 1.15rem;
@@ -47,7 +47,7 @@
 
     --special-black: #101820;
     --special-grey-strong:  #3d3d3d;
-    --special-grey-light:  #a0a0a0;
+    --special-grey-light:  #dfdfdf;
     --special-grey-medium:  #777777;
     --special-white: #FFFFFF;
 }
@@ -57,7 +57,7 @@ body{
     background-color: var(--special-orange-strong);
     font-family: var(--body-font);
     list-style: none;
-    width: 100vw;
+    width: 100%;
 }
 
 *{
@@ -128,18 +128,18 @@ nav{
     margin-bottom: auto;
 }
 
-.navigation_btn_shoppingcart_icon{
+.navigation_shoppingcart{
     color: var(--special-orange-strong);
     font-size: 40px;
     font-weight: 100;
 }
 
-.navigation_btn_shoppingcart_icon:hover{
+.navigation_shoppingcart:hover{
     cursor: pointer;
     color: var(--special-orange-light);
     transition: 0.3s;
 }
-.navigation_btn_shoppingcart_icon:not(:hover){
+.navigation_shoppingcart:not(:hover){
     transition: 0.3s;
 }
 
@@ -225,7 +225,10 @@ input[type="checkbox"]{
     transition: 0.3s;
 }
 
-/* ====================== SECTION: HOME ====================== */
+
+
+
+/* ====================== PAGE: HOME ====================== */
 
 /* ================ News & Promotions ================ */
 .home_news_poster1{
@@ -284,6 +287,108 @@ input[type="checkbox"]{
 	display: none;
 }
 
+
+
+/* ====================== PAGE: PRODUCT CATALOGUE ====================== */
+
+.product_catalogue{
+    background-color: var(--special-grey-light);
+    padding: 100px 8rem 2rem 8rem;
+}
+
+.product_catalogue_header{
+    color: var(--special-orange-strong);
+    text-align: center;
+    padding-top: 1.5rem;
+}
+
+.product_grid{
+    display: grid;
+    grid-template-columns: repeat(3, 550px);
+    padding: 0 0 1rem 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.product_grid_item{
+    display: grid;
+    grid-template-areas: 
+    "image image"
+    "content content"
+    "price purchase";
+    justify-content: center;
+    align-content: center;
+    column-gap: 1rem;
+}
+
+/* ================ Grid Items - Products ================ */
+
+.product_item_image{
+    grid-area: image;
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 2rem auto 1.5rem auto;
+    border-radius: 25px;
+}
+
+.product_item_details{
+    grid-area: content;
+}
+
+.product_item_details_name{
+    margin-bottom: 0.5rem;
+    font-size: calc(var(--largescreens-font-size) - 0.25rem);
+    text-align: center;
+}
+
+.product_item_details_name .item_title{
+    font-weight: bold;
+}
+
+.product_item_details_description{
+    margin-bottom: 1rem;
+    font-size: calc(var(--largescreens-font-size) - 0.25rem);
+    text-align: center;
+}
+
+.product_item_details_description .item_ingredients{
+    font-style: italic;
+    font-size: calc(var(--largescreens-font-size) - 0.4rem);
+}
+
+.product_item_price{
+    grid-area: price;
+    justify-self: end;
+    margin: auto 0 auto 0;
+}
+
+.product_item_add-to-cart{
+    grid-area: purchase;
+    justify-self: start;
+    color: #FFFFFF;
+    font-size: calc(var(--largescreens-font-size) - 0.5rem);
+    height: calc(var(--largescreens-font-size) + 0.75rem);
+    width: 8rem;
+    background-color: var(--special-orange-strong);
+    border-radius: 10px;
+    border: none;
+}
+.product_item_add-to-cart:hover{
+    transform: translateX(0.4rem);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.product_item_add-to-cart:not(:hover){
+    transition: 0.3s;
+}
+
+.product_item_add-to-cart .cart_icon{
+    color: #FFFFFF;
+}
+
+
+
 /* ====================== FOOTER ====================== */
 footer{
     bottom: 0;
@@ -291,7 +396,7 @@ footer{
 
 .footer{
     box-sizing: border-box;
-    padding: 50px 50px 25px 50px;
+    padding: 50px 0 25px 0;
     width: 100%;
     text-align: left;
     font-weight: bold;
@@ -417,7 +522,7 @@ footer{
     margin-top: 25px;
 }
 
-/* ---------------- Column 3 - Social Media Icons ---------------- */
+/* ---------------- Social Media Icons ---------------- */
 .footer_button{
     display: inline-block;
     height: 60px;
@@ -438,7 +543,7 @@ footer{
     border-radius: 50px;
     box-sizing: border-box;
     line-height: 60px;
-    color: black;
+    color: #000000;
     transition: all 0.3s ease-out;
 }
 
@@ -472,11 +577,6 @@ footer{
 }
 .footer_button:nth-child(3) button{
     color: #E1306C;
-    border: none;
-    background: none;
-}
-.footer_button:nth-child(4) button{
-    color: #333;
     border: none;
     background: none;
 }
@@ -529,7 +629,7 @@ footer{
         margin-left: 8rem;
         margin-right: 2rem;
 	}
-    .navigation_btn_shoppingcart_icon{
+    .navigation_shoppingcart{
         color: var(--special-orange-strong);
         font-size: 50px;
         font-weight: 100;
@@ -586,9 +686,6 @@ footer{
     .footer_icons .footer_button:nth-child(3):hover .footer_iconlink{
         background: linear-gradient(-135deg, #833AB4, #FCAF45);
     }
-    .footer_icons .footer_button:nth-child(4):hover .footer_iconlink{
-        background: linear-gradient(-135deg, #333, rgb(88, 88, 88));
-    }
     
 }
 
@@ -603,6 +700,9 @@ footer{
         margin-left: 2.25rem;
         margin-right: 4rem;
 	}
+    .cart_box{
+        left: 87.5%;
+    }
 
     .home_news_poster1{
         display: block;
@@ -628,6 +728,9 @@ footer{
     .navigation_gridleft_column3 {
 		margin: 19px -30px;
     }
+    .cart_box{
+        left: 82.5%;
+    }
 
     .footer_icons{
         display: none;
@@ -646,9 +749,6 @@ footer{
     }
     .altfooter_icons .footer_button:nth-child(3):hover .footer_iconlink{
         background: linear-gradient(-135deg, #833AB4, #FCAF45);
-    }
-    .altfooter_icons .footer_button:nth-child(4):hover .footer_iconlink{
-        background: linear-gradient(-135deg, #333, rgb(88, 88, 88));
     }
 }
 
@@ -669,6 +769,9 @@ footer{
 		margin-right: 100px;
 		margin-top: 19px
 	}
+    .cart_box{
+        left: 78%;
+    }
 	
 	.home_aboutus_grid_column2 {
 		display: none;
@@ -715,8 +818,11 @@ footer{
 		margin-top: 8px;
         font-size: 1.65rem;
 	}
-    .navigation_btn_shoppingcart_icon{
+    .navigation_shoppingcart{
         padding-left: 1rem;
+    }
+    .cart_box{
+        left: 72.5%;
     }
 
     
