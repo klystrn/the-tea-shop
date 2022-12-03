@@ -97,11 +97,13 @@ _Please note that due to the large asset file size, the website takes longer to 
 - Floral Fantasy
     - Reverie (Lavender, Earl grey)
     - Bloom (Rosehip, Rose Petals, Lemon Balm)
-    - Bliss (Linden Flowers, Vanilla)
+    - Bliss (Linden Flowers, Vanilla bean extract)
     - Bouquet Of Dreams (3 packs - 1 of each)
 
 ## Special Features ##
-1. Lorem ipsum
+1. Hamburger menu with animated pop-up in navigation bar
+2. Reactiven social media icons in footer
+3. 
 
 ## Technologies Used ##
 1. HTML, CSS
@@ -128,7 +130,7 @@ _Please note that due to the large asset file size, the website takes longer to 
 5. 26th November 2022
     - Improved README.md
     - Cleared and organised assets
-    - Finished [website content write-ups](https://docs.google.com/document/d/1d6IgJQ8PTTlHzXS34N_w7H7b1kIVKdQYW_S_QW0H-C4/edit?usp=sharing)
+    - Finished website content write-ups
     - Researched on website components (navigation bar, footer, carousel page)
 6. 28th November 2022
     - Added AboutUs.html, ContactUs.html, FloralFantasy.html, ProductCatologue.html, ShoppingCart.html, TheHouseSpecials.html
@@ -160,14 +162,13 @@ _Please note that due to the large asset file size, the website takes longer to 
     - Finished product page (with partial responsiveness)
     - Linked navigation bar logo to home page (index.html)
     - Altered CSS variables (special-grey-light, largescreens-font-size, h3-font-size, h4-font-size)
-    - 
 12. 4th December 2022
     - 
 
 ## Credits & Resources ##
 *Thank you to Dylan Chong & Yap Yi Xuan for producing the renders and collaborating with me on this mock business idea*
 
-### Media ###
+### People ###
 1. Dylan Chong (The House Specials, Logo)
 2. Yap Yi Xuan (Floral Fantasy)
 
