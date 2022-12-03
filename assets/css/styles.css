@@ -294,6 +294,7 @@ input[type="checkbox"]{
 .product_catalogue{
     background-color: var(--special-grey-light);
     padding: 100px 8rem 2rem 8rem;
+    width: 100%;
 }
 
 .product_catalogue_header{
@@ -304,8 +305,8 @@ input[type="checkbox"]{
 
 .product_grid{
     display: grid;
-    grid-template-columns: repeat(3, 550px);
-    padding: 0 0 1rem 0;
+    grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 1rem;
     align-items: center;
     justify-content: center;
 }
@@ -318,7 +319,7 @@ input[type="checkbox"]{
     "price purchase";
     justify-content: center;
     align-content: center;
-    column-gap: 1rem;
+    column-gap: 1.5rem;
 }
 
 /* ================ Grid Items - Products ================ */
@@ -647,13 +648,14 @@ footer{
         height: auto;
     }
     .home_altlogo{
-        margin-top: -7.5rem;
-        width: 537.5px;
+        padding: 4.5rem 0 0 10rem;
+        width: 500px;
         height: auto;
     }
     .home_aboutus_grid_column1{
         padding: 3rem 0 0 10rem;
     }
+
 
 
 
@@ -717,6 +719,12 @@ footer{
         padding: 3rem 0 0 4rem;
     }
 
+    .product_catalogue{
+        background-color: var(--special-grey-light);
+        padding: 100px 5rem 2rem 5rem;
+        width: 100%;
+    }
+
 }
 
 /* ================ Laptops ================ */
@@ -730,6 +738,12 @@ footer{
     }
     .cart_box{
         left: 82.5%;
+    }
+
+    .product_catalogue{
+        background-color: var(--special-grey-light);
+        padding: 100px 3rem 2rem 3rem;
+        width: 100%;
     }
 
     .footer_icons{
@@ -805,6 +819,15 @@ footer{
         display: none;
     }
 
+    .product_grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-bottom: 1rem;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--special-grey-light);
+    }
+
     
 }
 
@@ -848,5 +871,14 @@ footer{
         display: none;
     }
     
+    .product_grid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding-bottom: 1rem;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--special-grey-light);
+    }
     
 }
+
