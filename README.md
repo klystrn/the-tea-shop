@@ -148,11 +148,24 @@ _Please note that due to the large asset file size, the website takes longer to 
     - Began working on Product Catalogue page
     - Pivoted idea from a shopping cart page to a shopping cart pop-up with an icon in the navigation bar
 9. 1st December 2022
+    - Worked on responsiveness for social media icon links
+    - Fixed bugs
+10. 2nd December 2022
+    - Fixed a bug regarding social media icon link responsiveness
+    - Restructured website 
+    - Replaced "Larsseit" font with Poppins 
+    - Started on Product Page
+11. 3rd December 2022
+    - Fixed website runtime and altered assets
+    - Finished product page (with partial responsiveness)
+    - Linked navigation bar logo to home page (index.html)
+    - Altered CSS variables (special-grey-light, largescreens-font-size, h3-font-size, h4-font-size)
+    - 
+12. 4th December 2022
     - 
 
 ## Credits & Resources ##
-### Acknowledgements ###
-1. Thank you to Dylan Chong & Yap Yi Xuan for producing the renders and collaborating with me on this mock business idea
+*Thank you to Dylan Chong & Yap Yi Xuan for producing the renders and collaborating with me on this mock business idea*
 
 ### Media ###
 1. Dylan Chong (The House Specials, Logo)

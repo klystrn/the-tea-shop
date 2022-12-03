@@ -309,6 +309,7 @@ input[type="checkbox"]{
     padding-bottom: 1rem;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
 .product_grid_item{
@@ -617,6 +618,7 @@ footer{
     }
 }
 
+
 /* ====================== RESPONSIVENESS ====================== */
 
 /* ================ Large Screens ================ */
@@ -825,7 +827,6 @@ footer{
         padding-bottom: 1rem;
         align-items: center;
         justify-content: center;
-        background-color: var(--special-grey-light);
     }
 
     
