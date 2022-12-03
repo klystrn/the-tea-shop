@@ -102,8 +102,14 @@ _Please note that due to the large asset file size, the website takes longer to 
 
 ## Special Features ##
 1. Hamburger menu with animated pop-up in navigation bar
-2. Reactiven social media icons in footer
-3. 
+2. Reactive social media icons in footer
+3. Responsiveness for the following:
+    1. Large Screens: 2560px
+    2. Desktops: 1440px
+    3. Laptops Screens: 1024px
+    4. Tablets Screens: 768px
+    5. Mobile Screens: 480px
+4. 
 
 ## Technologies Used ##
 1. HTML, CSS

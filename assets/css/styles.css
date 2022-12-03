@@ -24,6 +24,12 @@
     --font-semi-bold: 650;
     --font-header-bold: 800;
 
+    --largescreens-screen-size: 2560px;
+    --desktops-screen-size: 1440px;
+    --laptop-screen-size: 1024px;
+    --tablets-screen-size: 768px;
+    --mobile-screen-size: 480px;
+
     /* ====================== TYPOGRAPHY ====================== */
     /* ================ Avenir Next ================ */
     --avenir-next-lt-probold: 'avenir_next_lt_probold';
@@ -95,7 +101,6 @@ nav{
     position: fixed;
 }
 
-/* ================ Contents ================ */
 .navigation_grid{
     margin-top: auto;
     margin-bottom: auto;
@@ -227,7 +232,6 @@ input[type="checkbox"]{
 
 
 
-
 /* ====================== PAGE: HOME ====================== */
 
 /* ================ News & Promotions ================ */
@@ -290,22 +294,17 @@ input[type="checkbox"]{
 /* ================ Discover ================ */
 .home_discover{
     background-color: var(--special-white);
+    padding: 0 4rem 2rem 4rem;
+    width: 100%;
 }
 
 .home_discover_header{
     color: var(--special-orange-strong);
     text-align: center;
-    padding-top: 2.5rem;
 }
 
-.home_discove_grid{
-    display: grid;
-    grid-template-areas: 
-    "hs ff"
-    "hs gp";
-    justify-content: center;
-    align-content: center;
-    column-gap: 1.5rem;
+.home_discover_images{
+    padding-top: 2rem;
 }
 
 .home_discover_grid_hs{
@@ -316,6 +315,39 @@ input[type="checkbox"]{
 }
 .home_discover_grid_gp{
     grid-area: gp;
+}
+
+.home_discover_grid_hs .hs_image{
+    border-radius: 10px;
+}
+.home_discover_grid_hs .hs_image:hover{
+    transform: scale(1.01);
+    transition: 0.3s;
+}
+.home_discover_grid_ff .ff_image:hover{
+    transform: scale(1.02);
+    transition: 0.3s;
+}
+
+.home_discover_grid_ff .ff_image{
+    border-radius: 10px;
+}
+.home_discover_grid_gp .gp_image:hover{
+    transform: scale(1.02);
+    transition: 0.3s;
+}
+.home_discover_grid_hs .hs_image:not(:hover){
+    transition: 0.3s;
+}
+
+.home_discover_grid_gp .gp_image{
+    border-radius: 10px;
+}
+.home_discover_grid_ff .ff_image:not(:hover){
+    transition: 0.3s;
+}
+.home_discover_grid_gp .gp_image:not(:hover){
+    transition: 0.3s;
 }
 
 /* ====================== PAGE: PRODUCT CATALOGUE ====================== */
@@ -349,7 +381,7 @@ input[type="checkbox"]{
     "price purchase";
     justify-content: center;
     align-content: center;
-    column-gap: 1.5rem;
+    gap: 1rem 1.5rem;
 }
 
 /* ================ Grid Items - Products ================ */
@@ -686,25 +718,54 @@ footer{
         height: auto;
     }
     .home_altlogo{
-        padding: 4.5rem 0 0 10rem;
-        width: 500px;
+        padding: 4.5rem 0 0 8rem;
+        width: 600px;
         height: auto;
     }
     .home_aboutus_grid_column1{
         padding: 3rem 0 0 10rem;
     }
+    .home_discover_grid{
+        display: grid;
+        grid-template-areas: 
+        "hs ff"
+        "hs gp";
+        gap: 1rem;
+    }
     .home_discover_grid_hs .hs_image{
-        
+        width: 900px;
+        height: 800px;
+        object-fit: cover;
     }
     .home_discover_grid_ff .ff_image{
-        
+        width: 900px;
+        height: 388px;
+        object-fit: cover;
     }
     .home_discover_grid_gp .gp_image{
-        
+        width: 900px;
+        height: 388px;
+        object-fit: cover;
+        object-position: 50% 40%;
     }
 
-
-
+    .product_grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding-bottom: 1rem;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        column-gap: 4rem;
+    }
+    .product_item_image{
+        grid-area: image;
+        width: 300px;
+        height: auto;
+        display: block;
+        margin: 2rem auto 1.5rem auto;
+        border-radius: 25px;
+    }
 
     .footer_column2 p{
         display: inline-block;
@@ -749,9 +810,6 @@ footer{
         margin-left: 2.25rem;
         margin-right: 4rem;
 	}
-    .cart_box{
-        left: 87.5%;
-    }
 
     .home_news_poster1{
         display: block;
@@ -765,11 +823,64 @@ footer{
     .home_aboutus_grid_column1{
         padding: 3rem 0 0 4rem;
     }
+    .home_altlogo{
+        padding: 6rem 0 0 8rem;
+        width: 600px;
+        height: auto;
+    }
+    .home_discover_grid{
+        display: grid;
+        grid-template-areas: 
+        "hs ff"
+        "hs gp";
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .home_discover{
+        background-color: var(--special-white);
+        padding: 100px 2rem 2rem 2rem;
+        width: 100%;
+    }
+    .home_discover_grid_hs .hs_image{
+        width: 675px;
+        height: 600px;
+        object-fit: cover;
+    }
+    .home_discover_grid_ff .ff_image{
+        width: 675px;
+        height: calc((675px - 98px) / 2);
+        object-fit: cover;
+    }
+    .home_discover_grid_gp .gp_image{
+        width: 675px;
+        height: calc((675px - 98px) / 2);
+        object-fit: cover;
+        object-position: 50% 40%;
+    }
 
     .product_catalogue{
         background-color: var(--special-grey-light);
         padding: 100px 5rem 2rem 5rem;
         width: 100%;
+    }
+    .product_grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding-bottom: 1rem;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        column-gap: 4rem;
+    }
+    .product_item_image{
+        grid-area: image;
+        width: 250px;
+        height: auto;
+        display: block;
+        margin: 2rem auto 1.5rem auto;
+        border-radius: 25px;
     }
 
 }
@@ -783,14 +894,65 @@ footer{
     .navigation_gridleft_column3 {
 		margin: 19px -30px;
     }
-    .cart_box{
-        left: 82.5%;
+    
+    .home_altlogo{
+        padding: 7.5rem 0 0 2rem;
+        width: 400px;
+        height: auto;
+    }
+    .home_discover_grid{
+        display: grid;
+        grid-template-areas: 
+        "hs"
+        "ff"
+        "gp";
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .home_discover{
+        background-color: var(--special-white);
+        padding: 100px 2rem 2rem 2rem;
+        width: 100%;
+    }
+    .home_discover_grid_hs .hs_image{
+        width: 700px;
+        height: 600px;
+        object-fit: cover;
+    }
+    .home_discover_grid_ff .ff_image{
+        width: 700px;
+        height: calc((675px - 98px) / 2);
+        object-fit: cover;
+    }
+    .home_discover_grid_gp .gp_image{
+        width: 700px;
+        height: 400px;
+        object-fit: cover;
+        object-position: 50% 40%;
     }
 
     .product_catalogue{
         background-color: var(--special-grey-light);
         padding: 100px 3rem 2rem 3rem;
         width: 100%;
+    }
+    .product_grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding-bottom: 1rem;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .product_item_image{
+        grid-area: image;
+        width: 200px;
+        height: auto;
+        display: block;
+        margin: 2rem auto 1.5rem auto;
+        border-radius: 25px;
     }
 
     .footer_icons{
@@ -842,8 +1004,6 @@ footer{
         grid-template-columns: 1fr;
 	}
     .home_altlogo{
-        margin-top: 0.5rem;
-        margin-bottom: 0.25rem;
         width: 322.5px;
         height: auto;
     }
@@ -864,6 +1024,38 @@ footer{
     }
     .home_aboutus_grid_column2{
         display: none;
+    }
+    .home_discover_grid{
+        display: grid;
+        grid-template-areas: 
+        "hs"
+        "ff"
+        "gp";
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .home_discover{
+        background-color: var(--special-white);
+        padding: 100px 2rem 2rem 2rem;
+        width: 100%;
+    }
+    .home_discover_grid_hs .hs_image{
+        width: 675px;
+        height: 600px;
+        object-fit: cover;
+    }
+    .home_discover_grid_ff .ff_image{
+        width: 675px;
+        height: calc((675px - 98px) / 2);
+        object-fit: cover;
+    }
+    .home_discover_grid_gp .gp_image{
+        width: 675px;
+        height: 400px;
+        object-fit: cover;
+        object-position: 50% 40%;
     }
 
     .product_grid{
@@ -896,8 +1088,6 @@ footer{
 
     
     .home_altlogo{
-        margin-top: 0.25rem;
-        margin-bottom: 0.15rem;
         width: 215px;
         height: auto;
     }
@@ -916,6 +1106,38 @@ footer{
     .home_aboutus_grid_column2{
         display: none;
     }
+    .home_discover_grid{
+        display: grid;
+        grid-template-areas: 
+        "hs"
+        "ff"
+        "gp";
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .home_discover{
+        background-color: var(--special-white);
+        padding: 100px 2rem 2rem 2rem;
+        width: 100%;
+    }
+    .home_discover_grid_hs .hs_image{
+        width: 300px;
+        height: 267px;
+        object-fit: cover;
+    }
+    .home_discover_grid_ff .ff_image{
+        width: 300px;
+        height: calc(300px / 2);
+        object-fit: cover;
+    }
+    .home_discover_grid_gp .gp_image{
+        width: 300px;
+        height: 200px;
+        object-fit: cover;
+        object-position: 50% 40%;
+    }
     
     .product_grid{
         display: grid;
@@ -924,6 +1146,14 @@ footer{
         align-items: center;
         justify-content: center;
         background-color: var(--special-grey-light);
+    }
+    .product_item_image{
+        grid-area: image;
+        width: 250px;
+        height: auto;
+        display: block;
+        margin: 2rem auto 1.5rem auto;
+        border-radius: 25px;
     }
     
 }
