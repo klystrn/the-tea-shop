@@ -50,7 +50,7 @@ _Please note that due to the large asset file size, the website takes longer to 
 
 ## Design ##
 ### Colour Scheme ###
-- Orange Darl (#E68D19)
+- Orange Dark (#E68D19)
 - Orange Strong (#FF9E1B)
 - Orange Light (#FBB03C)
 
