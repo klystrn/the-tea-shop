@@ -22,14 +22,13 @@ _Please note that due to the large asset file size, the website takes longer to 
     - Corporate Responsibility (Environmental friendliness)
     - Meet Our Team (CEO & Founder: Reginald , Designers: Dylan Chong & Yap Yi Xuan)
 - Product Catalogue
-    - 3 by 3 grid with products (1st row: The House Specials , 2nd row: Floral Fantasy , 3rd row: Gift Packs)
     - The House Specials: Earl Grey (SGD$19.90)
     - The House Specials: English Breakfast Tea (SGD$19.90)
     - The House Specials: Matcha Tea (SGD$19.90)
     - Floral Fantasy: Bloom (SGD$24.90)
     - Floral Fantasy: Reverie (SGD$24.90)
     - Floral Fantasy: Bliss (SGD$24.90)
-    - The Tea Gift Pack: 4 packets of 3 teas (SGD$179.90)
+    - The Tea Gift Pack: 4 packets of 3 teas (SGD$189.90)
     - The Classic: 2 packs of 3 teas (SGD$99.90)
     - Bouquet of Dreams: 1 pack of 3 teas (SGD$69.90)
 - Contact Us & FAQs
@@ -38,7 +37,7 @@ _Please note that due to the large asset file size, the website takes longer to 
 - Animated hamburger menu in navigation bar
 - Reactive social media icons
 - Functioning Shopping Cart
-- 
+- Pop-up Scroll-Up button after scrolling for 280px
 
 
 

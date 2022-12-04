@@ -565,8 +565,149 @@ input[type="checkbox"]{
     color: #FFFFFF;
 }
 
+/* ====================== REACH US ====================== */
 
+.contact_faq_grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 120px;
+    background-color: var(--special-grey-light);
+}
 
+.google_maps{
+    width: 600px;
+    height: 450px;
+    border: 2px;
+    border-color: var(--special-orange-strong);
+}
+
+/* ================ Contact Us ================ */
+.contact_contactus{
+    padding-top: 2rem;
+    background: var(--special-grey-light);
+}
+
+.contact_section_header{
+    color: var(--special-orange-strong);
+    text-align: center;
+    padding-top: 2.5rem;
+}
+
+.contact_division{
+    width: 75%;
+    padding: 20px 60px 30px 40px;
+    margin: 0 auto;
+}
+.contact_division .columns{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ====== Left Column ====== */
+.contact_division .columns .left_column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 25%;
+    height: 100%;
+    margin-top: 15px;
+}
+.columns .left_column .details{
+    margin: 14px;
+    text-align: center;
+}
+.columns .left_column .details i{
+    font-size: 30px;
+    color: var(--special-orange-strong);
+    margin-bottom: 10px;
+}
+.columns .left_column .details .topic{
+    font-weight: 500;
+}
+
+.columns .left_column .details .text-one{
+    font-size: calc(var(--largescreens-font-size) - 0.45rem);
+    color: var(--special-grey-medium);
+}
+
+/* ====== Right Column ====== */
+.contact_division .columns .right_column{
+    width: 75%;
+    margin: auto 0 auto 75px;
+}
+.columns .right_column .message_us{
+    font-size: 23px;
+    font-weight: 600;
+    color: var(--special-orange-strong);
+}
+
+.right_column p{
+    font-size: ;
+}
+
+.right_column .input_box{
+    height: 50px;
+    width: 100%;
+    margin: 12px 0;
+}
+.right_column .input_box input, .right_column .input_box textarea{
+    height: 100%;
+    width: 100%;
+    border: 2px;
+    font-size: 16px;
+    border-radius: 6px;
+    padding: 0 15px;
+    resize: none;
+}
+.right_column .message_box{
+    min-height: 110px;
+}
+.right_column .input_box textarea{
+    padding-top: 6px;
+}
+.right_column .button{
+    display: inline-block;
+    margin-top: 12px;
+}
+.right_column .button input[type="button"]{
+    color: #FFFFFF;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background: var(--special-orange-strong);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.right_column .button input[type="button"]:hover{
+    background: var(--special-orange-light);
+}
+
+/* ====== Contact Us Form - Responsiveness ====== */
+@media (max-width: 768px) {
+    .contact_division{
+      margin: 40px 0 0 0;
+      height: 100%;
+      margin: 0 auto;
+    }
+    .contact_division .columns{
+      flex-direction: column-reverse;
+    }
+   .contact_division .columns .left_column{
+     width: 100%;
+     flex-direction: row;
+     margin-top: 40px;
+     justify-content: center;
+   }
+   .contact_division .columns .right_column{
+     width: 100%;
+     margin-left: 0;
+   }
+  }
 /* ====================== FOOTER ====================== */
 footer{
     bottom: 0;
@@ -1027,7 +1168,6 @@ footer{
         margin: 2rem auto 1.5rem auto;
         border-radius: 25px;
     }
-
 }
 
 /* ================ Laptops ================ */
@@ -1182,7 +1322,7 @@ footer{
         position: absolute;
         z-index: 1;
         right: 104px;
-        top: 140px;
+        top: 160px;
         color: #FFFFFF;
         width: 25%;
     }
@@ -1453,26 +1593,26 @@ footer{
         position: absolute;
         z-index: 1;
         right: 104px;
-        top: 150px;
+        top: 140px;
         color: #FFFFFF;
         width: 26%;
     }
     .home_image_postertext h1{
-        margin-bottom: 0.15rem;
-        font-size: calc(var(--h2-font-size) - 2.8rem);
+        margin-bottom: 0.1rem;
+        font-size: calc(var(--h2-font-size) - 2.9rem);
     }
     .home_image_postertext a{
         border-radius: 20px;
         color: var(--special-orange-strong);
         background-color: #FFFFFF;
-        padding: 0.25rem;
+        padding: 0.125rem;
         text-decoration: none;
         font-weight: 700;
         cursor: pointer;
-        font-size: calc(var(--h2-font-size) - 2.8rem);;
+        font-size: calc(var(--h2-font-size) - 2.9rem);;
     }
     .home_image_postertext .text{
-        font-size: calc(var(--mobile-font-size) - 0.8rem);
+        font-size: calc(var(--mobile-font-size) - 0.6rem);
     }
     .home_altlogo{
         width: 215px;
