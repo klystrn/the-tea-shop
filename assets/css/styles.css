@@ -437,6 +437,7 @@ input[type="checkbox"]{
 .home_aboutus_text{
     font-weight: var(--font-medium);
     color: var(--special-orange-strong);
+    padding-top: 1rem;
     margin-bottom: 1rem;
 }
 
@@ -1594,6 +1595,7 @@ footer{
     .home_aboutus_text{
         text-align: center;
         padding: 0;
+        padding-top: 1rem;
     }
     .home_aboutus_mobiletext{
         display: unset;
@@ -1618,7 +1620,7 @@ footer{
         width: 100%;
     }
     .home_discover{
-        background-color: var(--special-white);
+        var(--special-grey-light);
         padding: 100px 2rem 2rem 2rem;
         width: 100%;
     }
@@ -1746,6 +1748,7 @@ footer{
         height: auto;
     }
     .home_aboutus_text{
+        padding-top: 1rem;
         text-align: center;
         padding: 0;
     }
@@ -1772,7 +1775,7 @@ footer{
         width: 100%;
     }
     .home_discover{
-        background-color: var(--special-white);
+        background-color: var(--special-grey-light);
         padding: 100px 2rem 2rem 2rem;
         width: 100%;
     }
