@@ -50,18 +50,6 @@ _Please note that due to the large asset file size, the website takes longer to 
 - White (#FFFFFF)
 
 ### Typography (San Serif) ###
-- Larsseit
-  - Larsseit Regular
-  - Larsseit Bold
-  - Larsseit BoldBold Italic
-  - Larsseit Extra Bold
-  - Larsseit Extra Bold Italic
-  - Larsseit Medium 
-  - Larsseit Medium Italic
-  - Larsseit Light
-  - Larsseit Light Italic
-  - Larsseit Thin
-  - Larsseit Thin Italic
 - Avenir Next
   - Avenir Next LT probold
   - Avenir Next LT proBdCn
@@ -84,7 +72,7 @@ _Please note that due to the large asset file size, the website takes longer to 
 - font medium: 500px
 - font semi bold: 650px
 
-- heading font: 'Larsseit Bold', sans-serif
+- heading font: 'Avenir Next lt Proregular', sans-serif
 - body font: 'Avenir Next lt Proregular', sans-serif
 
 ## Products ###
@@ -109,7 +97,7 @@ _Please note that due to the large asset file size, the website takes longer to 
     3. Laptops Screens: 1024px
     4. Tablets Screens: 768px
     5. Mobile Screens: 480px
-4. 
+4. Scroll-up button that appears after scrolling 280px down
 
 ## Technologies Used ##
 1. HTML, CSS
@@ -168,7 +156,10 @@ _Please note that due to the large asset file size, the website takes longer to 
     - Finished product page (with partial responsiveness)
     - Linked navigation bar logo to home page (index.html)
     - Altered CSS variables (special-grey-light, largescreens-font-size, h3-font-size, h4-font-size)
+    - Restructured home page (index.html)
 12. 4th December 2022
+    - Added a welcome section on home page (index.html)
+    - Added a scroll-up button
     - 
 
 ## Credits & Resources ##
