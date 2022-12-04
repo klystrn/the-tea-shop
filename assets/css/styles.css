@@ -260,7 +260,7 @@ input[type="checkbox"]{
 
 /* ================ Welcome ================ */
 .home_welcome{
-    background-color: var(--special-grey-light);
+    background-color: #FFFFFF;
     padding-bottom: 1rem;
     width: 100%;
 }
@@ -340,7 +340,7 @@ input[type="checkbox"]{
 
 /* ================ Discover ================ */
 .home_discover{
-    background-color: var(--special-grey-light);
+    background-color: #FFFFFF;
     padding: 2rem 0;
     width: 100%;
 }
@@ -401,7 +401,7 @@ input[type="checkbox"]{
 
 /* ================ About Us ================ */
 .home_aboutus{
-    background-color: var(--special-grey-light);
+    background-color: #FFFFFF;
     padding-bottom: 1rem;
 }
 
