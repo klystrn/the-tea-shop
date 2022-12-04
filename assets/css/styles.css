@@ -260,10 +260,9 @@ input[type="checkbox"]{
 
 /* ====================== PAGE: HOME ====================== */
 
-
 /* ================ Welcome ================ */
 .home_welcome{
-    background-color: #FFFFFF;
+    background-color: var(--special-grey-light);
     padding-bottom: 1rem;
     width: 100%;
 }
@@ -338,8 +337,8 @@ input[type="checkbox"]{
 
 /* ================ Discover ================ */
 .home_discover{
-    background-color: var(--special-white);
-    padding: 2rem 4rem;
+    background-color: var(--special-grey-light);
+    padding: 2rem 0;
     width: 100%;
 }
 
@@ -350,7 +349,7 @@ input[type="checkbox"]{
 
 .home_discover_images{
     padding-top: 2rem;
-    width: 60%;
+    width: 75%;
     margin: 0 auto;
 }
 
@@ -399,7 +398,8 @@ input[type="checkbox"]{
 
 /* ================ About Us ================ */
 .home_aboutus{
-    background-color: var(--special-white);
+    background-color: var(--special-grey-light);
+    padding-bottom: 1rem;
 }
 
 .home_aboutus_header{
@@ -411,6 +411,8 @@ input[type="checkbox"]{
 .home_aboutus_grid_columns{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    width: 75%;
+    margin: 0 auto;
 }
 
 .home_aboutus_grid_column1{
@@ -419,13 +421,13 @@ input[type="checkbox"]{
 
 .home_aboutus_grid_column2{
     padding-left: 1.5rem;
+    padding-top: 3rem;
 }
 
 .home_aboutus_text{
     font-weight: var(--font-medium);
     color: var(--special-orange-strong);
     margin-bottom: 1rem;
-    margin-left: 4rem;
 }
 
 .home_aboutus_mobiletext{
@@ -444,7 +446,6 @@ input[type="checkbox"]{
 .home_aboutus_grid_mobile {
 	display: none;
 }
-
 
 
 /* ====================== PAGE: PRODUCT CATALOGUE ====================== */
@@ -650,7 +651,6 @@ footer{
     line-height: 2;
 }
 
-
 .footer_column2_email{
     color: #FFFFFF;
 }
@@ -759,7 +759,30 @@ footer{
 }
 
 
+/* ====================== SCROLL UP ====================== */
+.scrollup{
+    position: fixed;
+    right: 1rem;
+    bottom: -20%;
+    background-color: var(--special-orange-strong);
+    padding: 0 .3rem;
+    border-radius: 5px;
+    z-index: var(--z-tooltip);
+    transition: .4s;
+}
+.scrollup:hover{
+    background-color: var(--special-orange-light);
+    transform: scale(1.125);
+}
 
+.scrollup__icon{
+    font-size: 1.5rem;
+    color: #FFF;
+}
+
+.show-scroll{
+    bottom: 5rem;
+}
 /* ================ Footer - Responsiveness ================ */
 
 @media screen and (max-height: 800px){
@@ -783,7 +806,6 @@ footer{
     }
 }
 
-
 /* ====================== RESPONSIVENESS ====================== */
 
 /* ================ Large Screens ================ */
@@ -805,15 +827,6 @@ footer{
         margin-bottom: auto;
     }
 
-    .home_news_poster1{
-        display: block;
-        padding-top: 100px;
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
-        max-width: 2560px;
-        height: auto;
-    }
     .home_altlogo{
         padding: 4.5rem 0 0 8rem;
         width: 600px;
@@ -830,18 +843,19 @@ footer{
         gap: 1rem;
     }
     .home_discover_grid_hs .hs_image{
-        width: 900px;
-        height: 800px;
+        width: 100%;
+        height: 600px;
         object-fit: cover;
+        object-position: 50% 75%;
     }
     .home_discover_grid_ff .ff_image{
-        width: 900px;
-        height: 388px;
+        width: 100%;
+        height: 288px;
         object-fit: cover;
     }
     .home_discover_grid_gp .gp_image{
-        width: 900px;
-        height: 388px;
+        width: 100%;
+        height: 288px;
         object-fit: cover;
         object-position: 50% 40%;
     }
@@ -935,24 +949,19 @@ footer{
         justify-content: center;
         width: 100%;
     }
-    .home_discover{
-        background-color: var(--special-white);
-        padding: 100px 2rem 2rem 2rem;
-        width: 100%;
-    }
     .home_discover_grid_hs .hs_image{
-        width: 675px;
+        width: 100%;
         height: 600px;
         object-fit: cover;
     }
     .home_discover_grid_ff .ff_image{
-        width: 675px;
-        height: calc((675px - 98px) / 2);
+        width: 100%;
+        height: 288px;
         object-fit: cover;
     }
     .home_discover_grid_gp .gp_image{
-        width: 675px;
-        height: calc((675px - 98px) / 2);
+        width: 100%;
+        height: 288px;
         object-fit: cover;
         object-position: 50% 40%;
     }
@@ -1000,32 +1009,26 @@ footer{
     .home_discover_grid{
         display: grid;
         grid-template-areas: 
-        "hs"
-        "ff"
-        "gp";
+        "hs ff"
+        "hs gp";
         gap: 1rem;
         align-items: center;
         justify-content: center;
         width: 100%;
     }
-    .home_discover{
-        background-color: var(--special-white);
-        padding: 100px 2rem 2rem 2rem;
-        width: 100%;
-    }
     .home_discover_grid_hs .hs_image{
-        width: 700px;
-        height: 600px;
+        width: 100%;
+        height: 400px;
         object-fit: cover;
     }
     .home_discover_grid_ff .ff_image{
-        width: 700px;
-        height: calc((675px - 98px) / 2);
+        width: 100%;
+        height: 192px;
         object-fit: cover;
     }
     .home_discover_grid_gp .gp_image{
-        width: 700px;
-        height: 400px;
+        width: 100%;
+        height: 192px;
         object-fit: cover;
         object-position: 50% 40%;
     }
@@ -1078,6 +1081,10 @@ footer{
         font-size: var(--tablets-font-size);
     }
 
+    nav{
+        height: 80px;
+        width: 100%;
+    }
 	.navigation_heading {
 		font-size: 30px;
 	}
@@ -1147,24 +1154,19 @@ footer{
         justify-content: center;
         width: 100%;
     }
-    .home_discover{
-        background-color: var(--special-white);
-        padding: 100px 2rem 2rem 2rem;
-        width: 100%;
-    }
     .home_discover_grid_hs .hs_image{
-        width: 675px;
-        height: 600px;
+        width: 100%;
+        height: 400px;
         object-fit: cover;
     }
     .home_discover_grid_ff .ff_image{
-        width: 675px;
-        height: calc((675px - 98px) / 2);
+        width: 100%;
+        height: 250px;
         object-fit: cover;
     }
     .home_discover_grid_gp .gp_image{
-        width: 675px;
-        height: 400px;
+        width: 100%;
+        height: 250px;
         object-fit: cover;
         object-position: 50% 40%;
     }
@@ -1192,7 +1194,7 @@ footer{
     }
 	.navigation_heading {
 		margin-top: 8px;
-        font-size: 25px;
+        font-size: 20px;
 	}
     .navigation_shoppingcart{
         padding-left: 1rem;
@@ -1257,18 +1259,18 @@ footer{
         width: 100%;
     }
     .home_discover_grid_hs .hs_image{
-        width: 300px;
-        height: 267px;
+        width: 100%;
+        height: 300px;
         object-fit: cover;
     }
     .home_discover_grid_ff .ff_image{
-        width: 300px;
-        height: calc(300px / 2);
+        width: 100%;
+        height: 200px;
         object-fit: cover;
     }
     .home_discover_grid_gp .gp_image{
-        width: 300px;
-        height: 200px;
+        width: 100%;
+        height: 250px;
         object-fit: cover;
         object-position: 50% 40%;
     }

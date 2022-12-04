@@ -11,7 +11,6 @@
         
         <!-- ========================== STYLES ========================== -->
         <link rel="stylesheet" href="assets\css\styles.css"> 
-        <link rel="stylesheet" href="assets\fonts\larsseit\larsseit.css">
         <link rel="stylesheet" href="assets\fonts\Avenir Next\avenir-next.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
@@ -30,14 +29,14 @@
                         </div>
     
                         <div class="navigation_gridleft_column2">
-                            <h1 class="navigation_heading">the tea shop</h1>
+                            <h1 class="navigation_heading">The Tea Shop</h1>
                         </div>
-                        
-                        <div class="navigation_gridleft_column3">
-                            <a href="ShoppingCart.html" class="navigation_shoppingcart">
-                                <i class="il uil-shopping-bag"></i>
-                            </a>
-                        </div>
+                        <button class="navigation_user">
+                            <i class="uil uil-user"></i>
+                        </button>
+                        <button class="navigation_shoppingcart">
+                            <i class="il uil-shopping-bag"></i>
+                        </button>
                     </div>
                     
                     <!-- ================= Hamburger Menu ================= -->
@@ -59,10 +58,10 @@
             </nav>
         </header>
 
-        <!-- ========================== PAGE: PRODUCT ========================== -->
+        <!-- ========================== PAGE: PRODUCTS ========================== -->
 
         <!-- ================= Product Catalogue ================= -->
-        <section class="product_catalogue">
+        <section class="product_catalogue" id="top">
             <h2 class="product_catalogue_header">Our Products</h2>
             <div class="product_grid">
 
@@ -197,7 +196,7 @@
         
 
         <!-- ========================== FOOTER ========================== -->
-        <footer class="footer">
+        <footer class="footer" id="footer">
 
             <!-- ================= Column 1 ================= -->
             <div class="footer_column1">
@@ -305,6 +304,11 @@
             </div>
             <p class="footer_copyright">Copyright © <strong>Reginald Tan</strong> 2022 - All rights reserved</p>
         </footer>
+
+        <!-- ========================== SCROLLUP ========================== -->
+        <a href="#top" class="scrollup" id="scroll-up">
+            <i class="uil uil-arrow-up scrollup__icon"></i>
+        </a>
 
         <!-- ========================== EXTERNAL FILES ========================== -->
         <script src="assets\javascript\main.js"></script>
