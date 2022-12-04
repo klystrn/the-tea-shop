@@ -44,13 +44,6 @@
     --special-orange-strong: #FF9E1B;
     --special-orange-light: #FBB03C;
 
-    --special-pink-strong: #CEA190;
-    --special-pink-light: #F4E6E1;
-    --special-purple-strong: #9290CE;
-    --special-purle-light: #D6CFFB;
-    --special-green-strong: #99D8BD;
-    --special-green-light: #C5E4D7;
-
     --special-black: #101820;
     --special-grey-strong:  #3d3d3d;
     --special-grey-light:  #dfdfdf;
@@ -609,11 +602,6 @@ input[type="checkbox"]{
 
 .faq_accordion .faq_accordion_content .title{
     font-weight: 600;
-    color: var(--special-grey-strong);
-}
-.faq_accordion .faq_accordion_content .subtitle{
-    font-size: var(--largescreens-font-size);
-    font-weight: 400;
     color: var(--special-grey-strong);
 }
 

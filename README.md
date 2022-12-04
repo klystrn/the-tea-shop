@@ -13,15 +13,12 @@ _Please note that due to the large asset file size, the website takes longer to 
 
 ## Website Pages & Features ##
 ### Pages ###
-- Home 
-    - News & Promotions (Carousell)
-    - Our Company
-    - Discover (The House Specials, Bouquet Of Dreams, Tea Gift Packs)
-- About Us
-    - Company Description
-    - Corporate Responsibility (Environmental friendliness)
-    - Meet Our Team (CEO & Founder: Reginald , Designers: Dylan Chong & Yap Yi Xuan)
-- Product Catalogue
+- Home Page
+    - News & Promotions
+    - Discover
+    - About Us
+    - Environmental Welfare
+- Products
     - The House Specials: Earl Grey (SGD$19.90)
     - The House Specials: English Breakfast Tea (SGD$19.90)
     - The House Specials: Matcha Tea (SGD$19.90)
@@ -31,21 +28,36 @@ _Please note that due to the large asset file size, the website takes longer to 
     - The Tea Gift Pack: 4 packets of 3 teas (SGD$189.90)
     - The Classic: 2 packs of 3 teas (SGD$99.90)
     - Bouquet of Dreams: 1 pack of 3 teas (SGD$69.90)
-- Contact Us & FAQs
+- Reach Us
+    - FAQs
+    - Location via Google Maps
+    - Contact Us Form
 
-### Features ###
+### Features & Functions ###
+- Reactive & Website Interactiveness throughout the website
 - Animated hamburger menu in navigation bar
 - Reactive social media icons
-- Functioning Shopping Cart
 - Pop-up Scroll-Up button after scrolling for 280px
-
-
+- Google Maps iframe
+- Formatted & Validated Contact Form
+- Accordian Dropdown for FAQs
+- Responsiveness for the following:
+    1. Large Screens: 2560px
+    2. Desktops: 1440px
+    3. Laptops Screens: 1024px
+    4. Tablets Screens: 768px
+    5. Mobile Screens: 480px
 
 ## Design ##
 ### Colour Scheme ###
-- Pantone Orange Strong (#FF9E1B)
-- Pantone Orange Light (#FBB03C)
+- Orange Darl (#E68D19)
+- Orange Strong (#FF9E1B)
+- Orange Light (#FBB03C)
+
 - Pantone Black (#101820)
+- Grey Strong (#3D3D3D)
+- Grey Medium (#777777)
+- Grey Light (#DFDFDF)
 - White (#FFFFFF)
 
 ### Typography (San Serif) ###
@@ -58,18 +70,19 @@ _Please note that due to the large asset file size, the website takes longer to 
   - Avenir Next LT proregular
 
 ### Font Control ###
-- h1 font size: 4.00rem (64.0px)
-- h2 font size: 3.50rem (56.0px)
-- h3 font size: 3.00rem (48.0px)
-- h4 font size: 2.50rem (40.0px)
-- h5 font size: 2.00rem (32.0px)
-- h6 font size: 1.50rem (24.0px)
-- normal font size: 1.20rem (19.2px)
-- small font size: 1.00rem (16.0px)
-- smaller font size: 0.80rem (12.8px)
+- h1 font size: 4.00rem
+- h2 font size: 3.50rem 
+- h3 font size: 2.60rem 
+- h4 font size: 2.25rem 
+- Large screen font size: 1.40rem
+- Desktop font size: 1.25rem
+- Laptop font size: 1.20rem
+- Tablets font size: 1.15rem
+- Mobile font size: 1.10rem
 
-- font medium: 500px
-- font semi bold: 650px
+- font medium: 500
+- font semi bold: 650
+- font header bold: 800
 
 - heading font: 'Avenir Next lt Proregular', sans-serif
 - body font: 'Avenir Next lt Proregular', sans-serif
@@ -87,21 +100,11 @@ _Please note that due to the large asset file size, the website takes longer to 
     - Bliss (Linden Flowers, Vanilla bean extract)
     - Bouquet Of Dreams (3 packs - 1 of each)
 
-## Special Features ##
-1. Hamburger menu with animated pop-up in navigation bar
-2. Reactive social media icons in footer
-3. Responsiveness for the following:
-    1. Large Screens: 2560px
-    2. Desktops: 1440px
-    3. Laptops Screens: 1024px
-    4. Tablets Screens: 768px
-    5. Mobile Screens: 480px
-4. Scroll-up button that appears after scrolling 280px down
-
 ## Technologies Used ##
 1. HTML, CSS
 2. JavaScript
 3. Adobe XD
+4. Adobe PhotoShop
 5. Visual Studio Code
 6. Webfont Generator
 
@@ -159,7 +162,8 @@ _Please note that due to the large asset file size, the website takes longer to 
 12. 4th December 2022
     - Added a welcome section on home page (index.html)
     - Added a scroll-up button
-    - 
+    - Finished Reach Us page (ContactUs.html)
+    - Completed responsive testing
 
 ## Credits & Resources ##
 *Thank you to Dylan Chong & Yap Yi Xuan for producing the renders and collaborating with me on this mock business idea*
