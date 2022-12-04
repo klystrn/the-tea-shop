@@ -566,19 +566,111 @@ input[type="checkbox"]{
 }
 
 /* ====================== REACH US ====================== */
+.contact_faq{
+    background-color: var(--special-grey-light);
+    padding-top: 100px;
+}
 
 .contact_faq_grid{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding-top: 120px;
-    background-color: var(--special-grey-light);
+    width: 75%;
+    margin: 0 auto;
 }
 
 .google_maps{
-    width: 600px;
-    height: 450px;
-    border: 2px;
-    border-color: var(--special-orange-strong);
+    width: 75%;
+    height: 456px;
+    max-height: 600px;
+    border: none;
+    border-radius: 10px;
+    padding-left: 3rem;
+}
+.contact_faq_column1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.faq_accordion{
+    display: flex;
+    max-width: 800px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    border-radius: 10px;
+    padding: 45px 60px;
+}
+.faq_accordion .faq_accordion_content{
+    width: 100%;
+}
+
+.faq_accordion .faq_accordion_content .title{
+    font-weight: 600;
+    color: var(--special-grey-strong);
+}
+.faq_accordion .faq_accordion_content .subtitle{
+    font-size: var(--largescreens-font-size);
+    font-weight: 400;
+    color: var(--special-grey-strong);
+}
+
+.faq_accordion .faq_accordion_content .faq_text{
+    margin-top: 25px;
+    height: 263px;
+    overflow-y: auto;
+}
+.faq_accordion .faq_accordion_content li{
+    list-style: none;
+    cursor: pointer;
+}
+.faq_faq_accordion_content li .question_arrow{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.faq_accordion_content li .question_arrow .question{
+    color: var(--special-grey-medium);
+    transition: all 0.3s ease;
+}
+.faq_accordion_content li .question_arrow .arrow{
+    color: var(--special-grey-medium);
+    transition: all 0.3s ease;
+    float: right;
+}
+
+.faq_accordion_content li:hover .question_arrow .question, 
+.faq_accordion_content li:hover .question_arrow .arrow{
+    color: var(--special-orange-strong);
+}
+
+.faq_accordion_content li.showAnswer .question_arrow .question, 
+.faq_accordion_content li.showAnswer .question_arrow .arrow{
+    color: var(--special-orange-strong);
+}
+
+.faq_accordion_content li .line{
+    display: block;
+    height: 2px;
+    width: 100%;
+    margin: 10px 0;
+    background: var(--special-grey-light);
+}
+.faq_accordion_content li p{
+    padding-top: 0.25rem;
+    font-size: 1rem;
+    width: 92%;
+    font-weight: 500;
+    color: var(--special-grey-medium);
+    display: none;
+}
+.faq_accordion_content li.showAnswer p{
+    display: block;
+}
+
+.faq_email{
+    color: var(--special-orange-strong);
 }
 
 /* ================ Contact Us ================ */
@@ -590,7 +682,8 @@ input[type="checkbox"]{
 .contact_section_header{
     color: var(--special-orange-strong);
     text-align: center;
-    padding-top: 2.5rem;
+    padding-top: 20px;
+    margin-bottom: 2rem;
 }
 
 .contact_division{

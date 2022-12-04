@@ -22,3 +22,18 @@ window.addEventListener('scroll', scrollUp)
 function clearInput(){
     document.getElementById("contactus_form").reset();
 }
+
+/*==================== FAQ ACCORDION ====================*/
+let li = document.querySelectorAll(".faq_text li");
+for (var i = 0; i < li.length; i++) {
+    li[i].addEventListener("click", (e)=>{
+        let clickedLi;
+        if(e.target.classList.contains("question_arrow")){
+            clickedLi = e.target.parentElement;
+        }
+        else{
+            clickedLi = e.target.parentElement.parentElement;
+        }
+        clickedLi.classList.toggle("showAnswer");
+    });
+}
