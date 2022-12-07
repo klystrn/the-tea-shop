@@ -727,7 +727,7 @@ input[type="checkbox"]{
 }
 
 .right_column p{
-    font-size: ;
+    font-size: 1.25rem;
 }
 
 .right_column .input_box{
@@ -1608,7 +1608,7 @@ footer{
         width: 100%;
     }
     .home_discover{
-        var(--special-grey-light);
+        background-color: var(--special-grey-light);
         padding: 100px 2rem 2rem 2rem;
         width: 100%;
     }
